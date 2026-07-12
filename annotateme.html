@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnnotateMe — AI-Assisted Data Annotation Platform | EnhanceBiz</title>
+  <meta name="description" content="AnnotateMe by EnhanceBiz: AI auto-annotation, real-time collaboration, 3-stage review, image/video/text/3D support, and export to 9+ ML formats.">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/enhancebiz.css?v=7">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="eb-nav" id="ebNav">
+  <div class="eb-nav__inner">
+    <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>Enhance<span>Biz</span></a>
+    <ul class="eb-menu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="services.html">Services <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="data-annotations.html"><i class="fa fa-object-group"></i><span>Data Annotation<span class="dd-sub">Image, video, text &amp; 3D labeling</span></span></a>
+          <a href="services.html#aiml"><i class="fa fa-cubes"></i><span>AI &amp; Data Operations<span class="dd-sub">Curation, RLHF, evaluations</span></span></a>
+          <a href="services.html#trust"><i class="fa fa-shield"></i><span>Trust &amp; Safety<span class="dd-sub">Content moderation &amp; review</span></span></a>
+          <a href="services.html#nlp"><i class="fa fa-language"></i><span>NLP &amp; Linguistic<span class="dd-sub">NER, sentiment, transcription</span></span></a>
+          <a href="services.html#cx"><i class="fa fa-headphones"></i><span>Customer Experience<span class="dd-sub">CX, call center, support</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="industries.html">Industries <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="industries.html#mobility"><i class="fa fa-car"></i><span>Autonomous &amp; Mobility</span></a>
+          <a href="industries.html#healthcare"><i class="fa fa-heartbeat"></i><span>Healthcare</span></a>
+          <a href="industries.html#finance"><i class="fa fa-university"></i><span>Financial Services</span></a>
+          <a href="industries.html#retail"><i class="fa fa-shopping-cart"></i><span>Retail &amp; eCommerce</span></a>
+          <a href="industries.html#tech"><i class="fa fa-microchip"></i><span>Technology &amp; Social</span></a>
+          <a href="industries.html#gaming"><i class="fa fa-gamepad"></i><span>Gaming &amp; Entertainment</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="annotateme.html">Products <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="annotateme.html" class="featured"><i class="fa fa-rocket"></i><span>AnnotateMe<span class="dd-sub">AI-assisted annotation platform</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="insights.html">Insights <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="insights.html#blog"><i class="fa fa-lightbulb-o"></i><span>Blog</span></a>
+          <a href="insights.html#case-studies"><i class="fa fa-line-chart"></i><span>Case Studies</span></a>
+          <a href="insights.html#white-papers"><i class="fa fa-file-text-o"></i><span>White Papers</span></a>
+          <a href="insights.html#reports"><i class="fa fa-bar-chart"></i><span>Analyst Reports</span></a>
+          <a href="insights.html#news"><i class="fa fa-newspaper-o"></i><span>In the News</span></a>
+          <a href="insights.html#events"><i class="fa fa-calendar"></i><span>Events</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="about.html">Company <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="about.html"><i class="fa fa-info-circle"></i><span>About Us</span></a>
+          <a href="careers.html"><i class="fa fa-briefcase"></i><span>Careers</span></a>
+          <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </li>
+    </ul>
+    <div class="eb-nav__cta">
+      <button class="eb-burger" id="ebBurger" aria-label="Menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div class="eb-mobile" id="ebMobile">
+  <a href="index.html">Home</a>
+  <div class="grp-label">Services</div>
+  <div class="sub">
+    <a href="data-annotations.html">Data Annotation</a>
+    <a href="services.html#aiml">AI &amp; Data Operations</a>
+    <a href="services.html#trust">Trust &amp; Safety</a>
+    <a href="services.html#nlp">NLP &amp; Linguistic</a>
+    <a href="services.html#cx">Customer Experience</a>
+  </div>
+  <div class="grp-label">Industries</div>
+  <div class="sub">
+    <a href="industries.html#mobility">Autonomous &amp; Mobility</a>
+    <a href="industries.html#healthcare">Healthcare</a>
+    <a href="industries.html#finance">Financial Services</a>
+    <a href="industries.html#retail">Retail &amp; eCommerce</a>
+    <a href="industries.html#tech">Technology &amp; Social</a>
+    <a href="industries.html#gaming">Gaming &amp; Entertainment</a>
+  </div>
+  <div class="grp-label">Products</div>
+  <div class="sub"><a href="annotateme.html">AnnotateMe Platform</a></div>
+  <div class="grp-label">Insights</div>
+  <div class="sub">
+    <a href="insights.html#blog">Blog</a>
+    <a href="insights.html#case-studies">Case Studies</a>
+    <a href="insights.html#white-papers">White Papers</a>
+    <a href="insights.html#reports">Analyst Reports</a>
+    <a href="insights.html#news">In the News</a>
+    <a href="insights.html#events">Events</a>
+  </div>
+  <div class="grp-label">Company</div>
+  <div class="sub">
+    <a href="about.html">About Us</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="eb-btn eb-btn--primary">Get Started</a>
+</div>
+
+<header class="eb-hero">
+  <div class="eb-container">
+    <div class="eb-hero__grid">
+      <div class="reveal in">
+        <span class="eb-eyebrow"><i class="fa fa-rocket"></i> A Product by EnhanceBiz</span>
+        <h1>Label smarter.<br>Train <span class="accent">faster</span>.<br>Ship sooner.</h1>
+        <p class="sub">AnnotateMe is a production-ready, AI-assisted annotation platform with real-time collaboration, automated QA, a full review workflow, and export to every major ML format.</p>
+        <div class="eb-hero__actions">
+          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-calendar"></i> Request a Demo</a>
+          <a href="#features" class="eb-btn eb-btn--ghost eb-btn--lg"><i class="fa fa-play-circle"></i> Explore Features</a>
+        </div>
+      </div>
+      <div class="eb-hero__visual reveal in d2">
+        <div class="eb-float eb-float--tl"><i class="fa fa-magic"></i><div><div class="t">AI Auto-Annotate</div><div class="s">YOLOv8 powered</div></div></div>
+        <div class="eb-float eb-float--br"><i class="fa fa-users"></i><div><div class="t">3 annotators live</div><div class="s">Real-time sync</div></div></div>
+        <div class="eb-mock">
+          <div class="eb-mock__bar"><span class="eb-mock__dot"></span><span class="eb-mock__dot"></span><span class="eb-mock__dot g"></span><span class="eb-mock__title">AnnotateMe · validation stage</span></div>
+          <div class="eb-mock__canvas">
+            <svg class="eb-mock__scene" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="ebSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20304f"/><stop offset="1" stop-color="#34466c"/></linearGradient>
+                <linearGradient id="ebRoad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4150"/><stop offset="1" stop-color="#20232b"/></linearGradient>
+              </defs>
+              <rect width="400" height="240" fill="url(#ebSky)"/>
+              <rect x="16" y="84" width="34" height="46" fill="#1c2740"/><rect x="56" y="68" width="24" height="62" fill="#243052"/>
+              <rect x="322" y="76" width="30" height="54" fill="#1c2740"/><rect x="358" y="62" width="26" height="68" fill="#243052"/>
+              <rect y="128" width="400" height="112" fill="#23262e"/>
+              <polygon points="150,128 250,128 344,240 56,240" fill="url(#ebRoad)"/>
+              <polygon points="250,128 400,128 400,240 344,240" fill="#2c313c"/>
+              <polygon points="199,150 201,150 203,167 197,167" fill="#e6c74a"/><polygon points="196,178 204,178 207,203 193,203" fill="#e6c74a"/><polygon points="192,214 208,214 213,240 187,240" fill="#e6c74a"/>
+              <g>
+                <rect x="78" y="150" width="92" height="40" rx="7" fill="#c1483f"/>
+                <rect x="90" y="132" width="66" height="26" rx="7" fill="#d1685f"/>
+                <rect x="96" y="136" width="54" height="17" rx="3" fill="#243244"/>
+                <rect x="83" y="176" width="14" height="8" rx="2" fill="#ffd36b"/><rect x="151" y="176" width="14" height="8" rx="2" fill="#ff6b6b"/>
+                <circle cx="98" cy="192" r="10" fill="#15171c"/><circle cx="150" cy="192" r="10" fill="#15171c"/>
+              </g>
+              <g>
+                <circle cx="314" cy="131" r="8" fill="#e2c6a0"/>
+                <rect x="306" y="140" width="16" height="27" rx="6" fill="#5b6b8c"/>
+                <rect x="308" y="166" width="5" height="20" rx="2" fill="#37405a"/><rect x="315" y="166" width="5" height="20" rx="2" fill="#37405a"/>
+              </g>
+              <polygon points="150,130 250,130 344,236 56,236" fill="#4ecdc4" fill-opacity="0.12" stroke="#4ecdc4" stroke-width="1.5"/>
+              <rect x="70" y="126" width="108" height="76" fill="none" stroke="#4da6ff" stroke-width="2"/>
+              <rect x="300" y="119" width="30" height="73" fill="none" stroke="#ff7a7a" stroke-width="2"/>
+              <g font-family="Nunito, sans-serif" font-size="10" font-weight="700">
+                <rect x="70" y="111" width="88" height="15" fill="#4da6ff"/><text x="74" y="122" fill="#08243d">Vehicle · 0.96</text>
+                <rect x="288" y="105" width="42" height="14" fill="#ff7a7a"/><text x="292" y="115.5" fill="#3a0a0a">Person</text>
+                <rect x="150" y="212" width="74" height="15" fill="#4ecdc4"/><text x="154" y="223" fill="#06322e">Road · seg</text>
+              </g>
+            </svg>
+            <div class="eb-mock__ai"><i class="fa fa-magic"></i> AI · 3 shapes · 0.92 avg</div>
+          </div>
+          <div class="eb-mock__foot"><span><i class="fa fa-object-group"></i> 6 tools</span><span><i class="fa fa-history"></i> Audit</span><span style="margin-left:auto;"><i class="fa fa-check-circle"></i> QA clean</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="eb-strip">
+  <div class="eb-container">
+    <div class="eb-stats">
+      <div class="eb-stat"><div class="eb-stat__num">9<span class="accent">+</span></div><div class="eb-stat__label">Export formats</div></div>
+      <div class="eb-stat"><div class="eb-stat__num">6</div><div class="eb-stat__label">Drawing tools</div></div>
+      <div class="eb-stat"><div class="eb-stat__num">3</div><div class="eb-stat__label">Review stages</div></div>
+      <div class="eb-stat"><div class="eb-stat__num">4</div><div class="eb-stat__label">Data types</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="eb-section" id="features">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Platform Features</span>
+      <h2 class="eb-h2 reveal d1">Everything your AI pipeline <span class="accent">needs</span></h2>
+      <p class="eb-lead reveal d2">From raw data upload to production-ready exports — AnnotateMe handles the full annotation lifecycle.</p>
+    </div>
+    <div class="eb-grid eb-grid--3">
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-magic"></i></div><h3>AI Auto-Annotation</h3><p>YOLOv8-powered labeling for single frames or entire batches, with confidence control and fine-tuning on your own data.</p><div class="eb-card__tags"><span class="eb-tag">YOLOv8</span><span class="eb-tag">Batch</span><span class="eb-tag">Fine-tune</span></div></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-users"></i></div><h3>Real-Time Collaboration</h3><p>Multiple annotators on one job at once. Socket.io broadcasts shape changes and live cursors instantly.</p><div class="eb-card__tags"><span class="eb-tag">Socket.io</span><span class="eb-tag">Live cursors</span></div></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-tasks"></i></div><h3>3-Stage Review</h3><p>Annotation → validation → acceptance with inline review banners, approve/reject controls, and reviewer notes.</p><div class="eb-card__tags"><span class="eb-tag">QA</span><span class="eb-tag">Sign-off chain</span></div></div>
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-bar-chart"></i></div><h3>Analytics Dashboard</h3><p>Label distribution, annotator leaderboards, velocity trends, and job status — from real queries. Grafana-ready.</p><div class="eb-card__tags"><span class="eb-tag">Grafana</span><span class="eb-tag">Velocity</span></div></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-check-circle"></i></div><h3>Automated QA</h3><p>Real-time checks flag overlapping shapes (IoU &gt; 0.5) and tiny annotations on every save.</p><div class="eb-card__tags"><span class="eb-tag">IoU</span><span class="eb-tag">Tiny-shape</span></div></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-history"></i></div><h3>Full Audit Trail</h3><p>Append-only log on every change with field-level diffs and time-per-frame tracking.</p><div class="eb-card__tags"><span class="eb-tag">Immutable</span><span class="eb-tag">Time tracking</span></div></div>
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-building"></i></div><h3>Multi-Tenant</h3><p>Full org isolation, multi-tenant users, and role-based access: admin, manager, annotator.</p><div class="eb-card__tags"><span class="eb-tag">RBAC</span><span class="eb-tag">Isolation</span></div></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-code"></i></div><h3>Webhooks &amp; API</h3><p>HMAC-signed webhooks on job events plus a full REST API for every operation.</p><div class="eb-card__tags"><span class="eb-tag">HMAC</span><span class="eb-tag">REST</span></div></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-random"></i></div><h3>Active Learning</h3><p>Smart Order surfaces the lowest-confidence frames first, so human effort goes where it matters.</p><div class="eb-card__tags"><span class="eb-tag">Uncertainty</span><span class="eb-tag">Smart Order</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="eb-section eb-section--alt">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:48px;">
+      <span class="eb-eyebrow reveal">Drawing Tools</span>
+      <h2 class="eb-h2 reveal d1">Six precision tools, <span class="accent">keyboard-fast</span></h2>
+    </div>
+    <div class="eb-grid eb-grid--4" style="max-width:920px;margin:0 auto;">
+      <div class="eb-card reveal eb-center"><div class="eb-card__icon" style="margin:0 auto 16px;"><i class="fa fa-mouse-pointer"></i></div><h3>Select</h3><p>Key: S</p></div>
+      <div class="eb-card reveal d1 eb-center"><div class="eb-card__icon" style="margin:0 auto 16px;"><i class="fa fa-square-o"></i></div><h3>Rectangle</h3><p>Key: R</p></div>
+      <div class="eb-card reveal d2 eb-center"><div class="eb-card__icon" style="margin:0 auto 16px;"><i class="fa fa-star-o"></i></div><h3>Polygon</h3><p>Key: P</p></div>
+      <div class="eb-card reveal d3 eb-center"><div class="eb-card__icon" style="margin:0 auto 16px;"><i class="fa fa-minus"></i></div><h3>Polyline</h3><p>Key: L</p></div>
+      <div class="eb-card reveal eb-center"><div class="eb-card__icon" style="margin:0 auto 16px;"><i class="fa fa-dot-circle-o"></i></div><h3>Point</h3><p>Key: D</p></div>
+      <div class="eb-card reveal d1 eb-center"><div class="eb-card__icon" style="margin:0 auto 16px;"><i class="fa fa-circle-o"></i></div><h3>Ellipse</h3><p>Key: E</p></div>
+    </div>
+    <p class="eb-center" style="margin-top:28px;color:var(--muted);font-size:14px;">Plus <strong style="color:var(--ink-2)">Ctrl+Z/Y</strong> undo/redo · <strong style="color:var(--ink-2)">1–9</strong> assign labels · <strong style="color:var(--ink-2)">Tab</strong> cycle shapes · <strong style="color:var(--ink-2)">F</strong> fit to canvas</p>
+  </div>
+</section>
+
+<!-- DATA TYPES -->
+<section class="eb-section">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Data Types</span>
+      <h2 class="eb-h2 reveal d1">One platform for <span class="accent">every data type</span></h2>
+    </div>
+    <div class="eb-grid eb-grid--2">
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-image"></i></div><h3>Image &amp; Video</h3><p>JPEG/PNG/TIFF and MP4/AVI/MOV with frame navigation, object tracking, and interpolation between keyframes.</p></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-font"></i></div><h3>Text &amp; NLP</h3><p>Span-level text annotation for NER, sentiment, and intent on plain-text and CSV data.</p></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-cube"></i></div><h3>3D Point Cloud</h3><p>3D cuboids on LiDAR .pcd files with a Three.js canvas and orthographic projections.</p></div>
+      <div class="eb-card reveal d3"><div class="eb-card__icon"><i class="fa fa-microphone"></i></div><h3>Audio &amp; Sensor</h3><p>Extensible canvas for audio waveforms, sensor time-series, and custom domain formats.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPORT FORMATS -->
+<section class="eb-section eb-section--alt">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:48px;">
+      <span class="eb-eyebrow reveal">Export & Import</span>
+      <h2 class="eb-h2 reveal d1">Export to <span class="accent">any format</span></h2>
+      <p class="eb-lead reveal d2">No format lock-in — AnnotateMe speaks every major ML framework.</p>
+    </div>
+    <div class="eb-grid eb-grid--3 reveal">
+      <div class="eb-card eb-center"><h3>COCO JSON</h3><p>Detection &amp; segmentation</p></div>
+      <div class="eb-card eb-center"><h3>YOLO</h3><p>Object detection labels</p></div>
+      <div class="eb-card eb-center"><h3>Pascal VOC</h3><p>Per-image XML</p></div>
+      <div class="eb-card eb-center"><h3>TensorFlow Record</h3><p>TF Object Detection API</p></div>
+      <div class="eb-card eb-center"><h3>Label Studio</h3><p>LS-compatible JSON</p></div>
+      <div class="eb-card eb-center"><h3>CVAT XML</h3><p>CVAT-compatible</p></div>
+      <div class="eb-card eb-center"><h3>Datumaro</h3><p>Intel Geti / Datumaro</p></div>
+      <div class="eb-card eb-center"><h3>MOT CSV</h3><p>Multi-object tracking</p></div>
+      <div class="eb-card eb-center"><h3>AnnotateMe JSON</h3><p>Native full-fidelity</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENTERPRISE -->
+<section class="eb-section">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Enterprise Ready</span>
+      <h2 class="eb-h2 reveal d1">Built for <span class="accent">enterprise scale</span></h2>
+    </div>
+    <div class="eb-grid eb-grid--4">
+      <div class="eb-why reveal"><div class="eb-why__icon"><i class="fa fa-shield"></i></div><h3>Multi-Tenant Isolation</h3><p>Full data isolation per org with cross-tenant admin analytics.</p></div>
+      <div class="eb-why reveal d1"><div class="eb-why__icon"><i class="fa fa-lock"></i></div><h3>Secure &amp; Auditable</h3><p>JWT auth, HMAC webhooks, rate limiting, immutable audit log.</p></div>
+      <div class="eb-why reveal d2"><div class="eb-why__icon"><i class="fa fa-cloud"></i></div><h3>Cloud-Native Storage</h3><p>S3-compatible MinIO or AWS S3, PostgreSQL, Redis caching.</p></div>
+      <div class="eb-why reveal d3"><div class="eb-why__icon"><i class="fa fa-plug"></i></div><h3>API &amp; Webhooks</h3><p>Full REST API and event webhooks for pipeline integration.</p></div>
+      <div class="eb-why reveal"><div class="eb-why__icon"><i class="fa fa-expand"></i></div><h3>Scalable Architecture</h3><p>Docker Compose, multi-replica backend, tuned Postgres.</p></div>
+      <div class="eb-why reveal d1"><div class="eb-why__icon"><i class="fa fa-bar-chart"></i></div><h3>Grafana Integration</h3><p>Live analytics dashboards embedded in the platform.</p></div>
+      <div class="eb-why reveal d2"><div class="eb-why__icon"><i class="fa fa-code-fork"></i></div><h3>Flexible Deployment</h3><p>Self-hosted or managed, with SSL and staging support.</p></div>
+      <div class="eb-why reveal d3"><div class="eb-why__icon"><i class="fa fa-heartbeat"></i></div><h3>E2E Tested</h3><p>Playwright coverage across auth, projects, and annotation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="eb-section eb-section--alt">
+  <div class="eb-container">
+    <div class="eb-cta reveal">
+      <div class="eb-cta__inner">
+        <h2>Deploy AnnotateMe for your team</h2>
+        <p>Self-hosted or fully managed by EnhanceBiz — up and running in days, not months.</p>
+        <div class="eb-cta__actions">
+          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-calendar"></i> Schedule a Demo</a>
+          <a href="data-annotations.html" class="eb-btn eb-btn--outline-light eb-btn--lg"><i class="fa fa-object-group"></i> Annotation Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="eb-footer">
+  <div class="eb-container">
+    <div class="eb-footer__grid">
+      <div>
+        <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>EnhanceBiz</a>
+        <p class="eb-footer__about">The human-in-the-loop data company. Annotation, NLP, and AI/ML dataset work — sharpened by AnnotateMe, the platform we built ourselves.</p>
+        <div class="eb-footer__social">
+          <a href="https://www.linkedin.com/in/enhancebiz-6b789b366/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:info@enhance-biz.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          <a href="company-profile/Profile-Enhance-Biz.pptx" aria-label="Brochure"><i class="fa fa-file-powerpoint-o"></i></a>
+        </div>
+      </div>
+      <div><h4>Services</h4><div class="eb-footer__links"><a href="data-annotations.html">Data Annotation</a><a href="services.html#aiml">AI &amp; Data Operations</a><a href="services.html#trust">Trust &amp; Safety</a><a href="services.html#nlp">NLP &amp; Linguistic</a><a href="services.html#cx">Customer Experience</a><a href="annotateme.html">AnnotateMe Platform</a></div></div>
+      <div><h4>Explore</h4><div class="eb-footer__links"><a href="industries.html">Industries</a><a href="insights.html">Insights</a><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div></div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <ul class="eb-footer__contact" style="margin-bottom:16px;">
+          <li><i class="fa fa-envelope"></i><a href="mailto:info@enhance-biz.com">info@enhance-biz.com</a></li>
+          <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/enhancebiz-6b789b366/" target="_blank">EnhanceBiz on LinkedIn</a></li>
+        </ul>
+        <form class="eb-newsletter" onsubmit="return false;"><input type="email" placeholder="Your work email" required><button class="eb-btn eb-btn--primary" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="eb-footer__bottom">
+      <div>© 2026 EnhanceBiz. All rights reserved.</div>
+      <div><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/eb-site.js"></script>
+<script src="js/eb-chatbot.js"></script>
+</body>
+</html>
