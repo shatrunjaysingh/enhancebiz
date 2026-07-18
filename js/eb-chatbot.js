@@ -63,7 +63,7 @@
     },
     {
       keys: ['contact', 'email', 'phone', 'reach', 'talk to', 'sales', 'call you'],
-      answer: "You can reach us at <a href='mailto:info@enhance-biz.com'>info@enhance-biz.com</a> or via <a href='https://www.linkedin.com/in/enhancebiz-6b789b366/' target='_blank'>LinkedIn</a>. Or use the <a href='contact.html'>contact form</a> and we'll get back to you quickly."
+      answer: "You can reach us at <a href='mailto:shiwesh@enhancebizcx.com'>shiwesh@enhancebizcx.com</a> or via <a href='https://www.linkedin.com/in/enhancebiz-6b789b366/' target='_blank'>LinkedIn</a>. Or use the <a href='contact.html'>contact form</a> and we'll get back to you quickly."
     },
     {
       keys: ['career', 'job', 'hiring', 'work', 'apply', 'vacancy', 'employment'],

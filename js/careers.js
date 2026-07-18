@@ -40,7 +40,7 @@
       wrap.innerHTML =
         '<p class="eb-center" style="grid-column:1/-1;color:var(--muted);">' +
         'No open roles right now — but we’re always glad to meet great people. ' +
-        '<a href="mailto:info@enhance-biz.com?subject=General%20Application" style="color:var(--gold-deep);font-weight:600;">Send us your resume</a>.</p>';
+        '<a href="mailto:shiwesh@enhancebizcx.com?subject=General%20Application" style="color:var(--gold-deep);font-weight:600;">Send us your resume</a>.</p>';
       return;
     }
     wrap.innerHTML = jobs.map(function (j, i) {
@@ -91,7 +91,7 @@
           '<input type="file" name="resume" accept=".pdf,.doc,.docx,application/pdf" required></label>' +
         '<button type="submit" class="eb-btn eb-btn--primary eb-btn--lg" style="width:100%;"><i class="fa fa-paper-plane"></i> Submit Application</button>' +
         '<div class="success" id="ebApplyOk"><i class="fa fa-check-circle"></i> Thanks! Your application has been received.</div>' +
-        '<div class="error" id="ebApplyErr">Something went wrong. Please email <a href="mailto:info@enhance-biz.com">info@enhance-biz.com</a>.</div>' +
+        '<div class="error" id="ebApplyErr">Something went wrong. Please email <a href="mailto:shiwesh@enhancebizcx.com">shiwesh@enhancebizcx.com</a>.</div>' +
       '</form></div>';
   document.body.appendChild(modal);
 
@@ -131,7 +131,7 @@
         '\nEmail: ' + v('email') + '\nPhone: ' + v('phone') + '\nLink: ' + v('link') + '\n\n' +
         (v('message') ? v('message') + '\n\n' : '') +
         '(Please attach your resume — ' + (aFile.files[0] ? aFile.files[0].name : 'file') + ' — before sending.)';
-      window.location.href = 'mailto:info@enhance-biz.com?subject=' +
+      window.location.href = 'mailto:shiwesh@enhancebizcx.com?subject=' +
         encodeURIComponent('Application: ' + aRoleInput.value) + '&body=' + encodeURIComponent(body);
       aOk.innerHTML = '<i class="fa fa-check-circle"></i> Your email draft is ready — attach your resume and hit send.';
       aOk.style.display = 'block';
