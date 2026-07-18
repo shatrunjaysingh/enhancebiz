@@ -703,3 +703,12 @@ button { font-family: inherit; cursor: pointer; }
 .eb-faq__a { max-height: 0; overflow: hidden; transition: max-height 0.32s var(--ease); }
 .eb-faq__item.open .eb-faq__a { max-height: 400px; }
 .eb-faq__a p { padding: 0 4px 24px; color: var(--body); font-size: 15px; line-height: 1.7; margin: 0; }
+
+/* Animated stat "pop" as the number counts up */
+@keyframes ebPop {
+  0%   { transform: scale(0.75); opacity: 0.35; }
+  55%  { transform: scale(1.14); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.eb-stat__num.counting { animation: ebPop 0.9s var(--ease) both; }
+.eb-stat__num.counting .eb-count { color: var(--gold-deep); }

@@ -7,7 +7,7 @@
   <meta name="description" content="EnhanceBiz builds the training data behind modern AI — image, video, text & 3D annotation, NLP, and AI/ML dataset services, sharpened by our own platform AnnotateMe. Plus enterprise BPO & customer support.">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/enhancebiz.css?v=8">
+  <link rel="stylesheet" href="css/enhancebiz.css?v=9">
 </head>
 <body>
 
@@ -593,8 +593,9 @@
   function ebCount(el){
     var raw = el.getAttribute('data-to'); var to = parseFloat(raw);
     var dec = (raw.split('.')[1] || '').length;
+    var num = el.closest && el.closest('.eb-stat__num'); if (num) num.classList.add('counting');
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = to.toFixed(dec); return; }
-    var dur = 1300, t0 = null;
+    var dur = 1800, t0 = null;
     requestAnimationFrame(function step(ts){
       if(!t0) t0 = ts; var p = Math.min((ts - t0)/dur, 1);
       el.textContent = (to * (0.5 - Math.cos(Math.PI*p)/2)).toFixed(dec);
