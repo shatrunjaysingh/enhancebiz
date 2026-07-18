@@ -743,3 +743,23 @@ button { font-family: inherit; cursor: pointer; }
   .eb-det1, .eb-det2, .eb-det3, .eb-cuboid { animation: none; opacity: 1; }
   .eb-3d { animation: none; }
 }
+
+/* Text / NLP annotation demo (named-entity highlights) */
+.eb-nlp { display: block; padding: 26px 22px; }
+.eb-nlp__text { font-family: 'DM Sans', sans-serif; font-size: 15.5px; line-height: 2.4; color: #aeb8cc; }
+.eb-ent { position: relative; border-radius: 4px; padding: 1px 4px; font-weight: 600; white-space: nowrap; background-color: transparent; animation: ebEntBg 4.8s ease-in-out infinite both; }
+.eb-ent b { position: absolute; top: -15px; left: 0; font-size: 8px; font-weight: 800; letter-spacing: 0.03em; padding: 1px 4px; border-radius: 3px; white-space: nowrap; opacity: 0; animation: ebEntLbl 4.8s ease-in-out infinite both; }
+.eb-ent--per { --ent: rgba(93,180,255,0.30); color: #dbebff; } .eb-ent--per b { background: #4da6ff; color: #08243d; }
+.eb-ent--org { --ent: rgba(150,130,255,0.30); color: #e5dfff; } .eb-ent--org b { background: #9f8cff; color: #1a0f3a; }
+.eb-ent--loc { --ent: rgba(78,205,196,0.30); color: #cdf6f1; } .eb-ent--loc b { background: #4ecdc4; color: #06322e; }
+.eb-ent--date { --ent: rgba(255,180,0,0.28); color: #ffe7ad; } .eb-ent--date b { background: #ffb400; color: #3a2a00; }
+.eb-e1, .eb-e1 b { animation-delay: 0.3s; }
+.eb-e2, .eb-e2 b { animation-delay: 0.9s; }
+.eb-e3, .eb-e3 b { animation-delay: 1.4s; }
+.eb-e4, .eb-e4 b { animation-delay: 1.9s; }
+@keyframes ebEntBg { 0% { background-color: transparent; } 6% { background-color: var(--ent); } 82% { background-color: var(--ent); } 90%,100% { background-color: transparent; } }
+@keyframes ebEntLbl { 0% { opacity: 0; } 8% { opacity: 1; } 82% { opacity: 1; } 90%,100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .eb-ent { background-color: var(--ent); animation: none; }
+  .eb-ent b { opacity: 1; animation: none; }
+}
