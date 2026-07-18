@@ -39,4 +39,19 @@
       if (!isOpen) item.classList.add('open');
     });
   });
+
+  // Animated counters (count up when scrolled into view)
+  function ebCount(el){
+    var raw = el.getAttribute('data-to'); var to = parseFloat(raw);
+    var dec = (raw.split('.')[1] || '').length;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = to.toFixed(dec); return; }
+    var dur = 1300, t0 = null;
+    requestAnimationFrame(function step(ts){
+      if(!t0) t0 = ts; var p = Math.min((ts - t0)/dur, 1);
+      el.textContent = (to * (0.5 - Math.cos(Math.PI*p)/2)).toFixed(dec);
+      if(p < 1) requestAnimationFrame(step); else el.textContent = to.toFixed(dec);
+    });
+  }
+  var ebCio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ ebCount(e.target); ebCio.unobserve(e.target); } }); }, { threshold: 0.5 });
+  document.querySelectorAll('.eb-count').forEach(function(el){ ebCio.observe(el); });
 })();

@@ -199,9 +199,9 @@
 <section class="eb-section">
   <div class="eb-container">
     <div class="eb-stats">
-      <div class="eb-stat reveal"><div class="eb-stat__num">1<span class="accent">M+</span></div><div class="eb-stat__label">Data points annotated</div></div>
-      <div class="eb-stat reveal d1"><div class="eb-stat__num">9<span class="accent">+</span></div><div class="eb-stat__label">Export formats supported</div></div>
-      <div class="eb-stat reveal d2"><div class="eb-stat__num">99.2<span class="accent">%</span></div><div class="eb-stat__label">QA-verified accuracy</div></div>
+      <div class="eb-stat reveal"><div class="eb-stat__num"><span class="eb-count" data-to="1">0</span><span class="accent">M+</span></div><div class="eb-stat__label">Data points annotated</div></div>
+      <div class="eb-stat reveal d1"><div class="eb-stat__num"><span class="eb-count" data-to="9">0</span><span class="accent">+</span></div><div class="eb-stat__label">Export formats supported</div></div>
+      <div class="eb-stat reveal d2"><div class="eb-stat__num"><span class="eb-count" data-to="99.2">0</span><span class="accent">%</span></div><div class="eb-stat__label">QA-verified accuracy</div></div>
       <div class="eb-stat reveal d3"><div class="eb-stat__num">24/7</div><div class="eb-stat__label">Global delivery teams</div></div>
     </div>
     <div class="eb-center" style="margin-top:56px;">
@@ -588,6 +588,21 @@
       if (!isOpen) item.classList.add('open');
     });
   });
+
+  // Animated counters (count up when scrolled into view)
+  function ebCount(el){
+    var raw = el.getAttribute('data-to'); var to = parseFloat(raw);
+    var dec = (raw.split('.')[1] || '').length;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = to.toFixed(dec); return; }
+    var dur = 1300, t0 = null;
+    requestAnimationFrame(function step(ts){
+      if(!t0) t0 = ts; var p = Math.min((ts - t0)/dur, 1);
+      el.textContent = (to * (0.5 - Math.cos(Math.PI*p)/2)).toFixed(dec);
+      if(p < 1) requestAnimationFrame(step); else el.textContent = to.toFixed(dec);
+    });
+  }
+  var ebCio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ ebCount(e.target); ebCio.unobserve(e.target); } }); }, { threshold: 0.5 });
+  document.querySelectorAll('.eb-count').forEach(function(el){ ebCio.observe(el); });
 </script>
 <script src="js/eb-chatbot.js"></script>
 </body>
