@@ -27,4 +27,16 @@
     });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal:not(.in)').forEach(function (el) { io.observe(el); });
+
+  // FAQ accordion
+  document.querySelectorAll('.eb-faq__q').forEach(function (q) {
+    q.addEventListener('click', function () {
+      var item = q.parentNode;
+      var isOpen = item.classList.contains('open');
+      // close siblings for a clean single-open accordion
+      var parent = item.parentNode;
+      parent.querySelectorAll('.eb-faq__item.open').forEach(function (o) { o.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 })();

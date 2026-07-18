@@ -668,3 +668,38 @@ button { font-family: inherit; cursor: pointer; }
 .eb-mobile a { color: rgba(255,255,255,0.92); border-bottom-color: rgba(255,255,255,0.10); }
 .eb-mobile .grp-label { color: rgba(255,255,255,0.55); }
 .eb-mobile .sub a { color: rgba(255,255,255,0.80); }
+
+/* ==========================================================================
+   TRUST-BUILDERS — stack strip, testimonials, security items, FAQ
+   ========================================================================== */
+
+/* "Works with your stack" pills */
+.eb-stack { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; }
+.eb-stack span { font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; color: var(--ink-2); background: #fff; border: 1px solid var(--border); border-radius: 100px; padding: 10px 20px; box-shadow: var(--shadow-sm); transition: all 0.2s var(--ease); }
+.eb-stack span:hover { border-color: var(--gold); color: var(--gold-deep); transform: translateY(-2px); }
+
+/* Testimonials */
+.eb-quote { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 30px; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+.eb-quote:hover { transform: translateY(-5px); box-shadow: 0 18px 46px rgba(12,0,50,0.09); }
+.eb-quote__stars { color: #ffb400; font-size: 14px; margin-bottom: 14px; letter-spacing: 3px; }
+.eb-quote p { font-size: 15.5px; color: var(--ink-2); line-height: 1.7; margin: 0 0 22px; }
+.eb-quote__by { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+.eb-quote__avatar { width: 46px; height: 46px; border-radius: 50%; background: linear-gradient(135deg, #005cff, #8219ff); display: grid; place-items: center; color: #fff; font-weight: 700; font-family: 'Poppins', sans-serif; flex-shrink: 0; }
+.eb-quote__name { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--ink); font-size: 14.5px; }
+.eb-quote__role { font-size: 13px; color: var(--muted); }
+
+/* Trust & security items */
+.eb-trust-item { display: flex; gap: 14px; align-items: flex-start; }
+.eb-trust-item > i { width: 44px; height: 44px; border-radius: 12px; background: var(--gold-tint); color: var(--gold-deep); display: grid; place-items: center; font-size: 17px; flex-shrink: 0; }
+.eb-trust-item h3 { font-size: 16px; margin-bottom: 5px; }
+.eb-trust-item p { font-size: 14px; color: var(--body); line-height: 1.6; margin: 0; }
+
+/* FAQ accordion */
+.eb-faq { max-width: 840px; margin: 0 auto; }
+.eb-faq__item { border-bottom: 1px solid var(--border); }
+.eb-faq__q { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; background: none; border: none; text-align: left; padding: 24px 4px; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 17px; color: var(--ink); cursor: pointer; letter-spacing: -0.01em; }
+.eb-faq__q i { transition: transform 0.25s var(--ease); color: var(--gold-deep); flex-shrink: 0; font-size: 16px; }
+.eb-faq__item.open .eb-faq__q i { transform: rotate(45deg); }
+.eb-faq__a { max-height: 0; overflow: hidden; transition: max-height 0.32s var(--ease); }
+.eb-faq__item.open .eb-faq__a { max-height: 400px; }
+.eb-faq__a p { padding: 0 4px 24px; color: var(--body); font-size: 15px; line-height: 1.7; margin: 0; }
