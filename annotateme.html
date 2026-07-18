@@ -7,7 +7,7 @@
   <meta name="description" content="AnnotateMe by EnhanceBiz: AI auto-annotation, real-time collaboration, 3-stage review, image/video/text/3D support, and export to 9+ ML formats.">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/enhancebiz.css?v=9">
+  <link rel="stylesheet" href="css/enhancebiz.css?v=10">
 </head>
 <body>
 
@@ -150,16 +150,17 @@
                 <rect x="306" y="140" width="16" height="27" rx="6" fill="#5b6b8c"/>
                 <rect x="308" y="166" width="5" height="20" rx="2" fill="#37405a"/><rect x="315" y="166" width="5" height="20" rx="2" fill="#37405a"/>
               </g>
-              <polygon points="150,130 250,130 344,236 56,236" fill="#4ecdc4" fill-opacity="0.12" stroke="#4ecdc4" stroke-width="1.5"/>
-              <rect x="70" y="126" width="108" height="76" fill="none" stroke="#4da6ff" stroke-width="2"/>
-              <rect x="300" y="119" width="30" height="73" fill="none" stroke="#ff7a7a" stroke-width="2"/>
+              <polygon class="eb-det3" points="150,130 250,130 344,236 56,236" fill="#4ecdc4" fill-opacity="0.12" stroke="#4ecdc4" stroke-width="1.5"/>
+              <rect class="eb-det1" x="70" y="126" width="108" height="76" fill="none" stroke="#4da6ff" stroke-width="2"/>
+              <rect class="eb-det2" x="300" y="119" width="30" height="73" fill="none" stroke="#ff7a7a" stroke-width="2"/>
               <g font-family="Nunito, sans-serif" font-size="10" font-weight="700">
-                <rect x="70" y="111" width="88" height="15" fill="#4da6ff"/><text x="74" y="122" fill="#08243d">Vehicle · 0.96</text>
-                <rect x="288" y="105" width="42" height="14" fill="#ff7a7a"/><text x="292" y="115.5" fill="#3a0a0a">Person</text>
-                <rect x="150" y="212" width="74" height="15" fill="#4ecdc4"/><text x="154" y="223" fill="#06322e">Road · seg</text>
+                <rect class="eb-det1" x="70" y="111" width="88" height="15" fill="#4da6ff"/><text class="eb-det1" x="74" y="122" fill="#08243d">Vehicle · 0.96</text>
+                <rect class="eb-det2" x="288" y="105" width="42" height="14" fill="#ff7a7a"/><text class="eb-det2" x="292" y="115.5" fill="#3a0a0a">Person</text>
+                <rect class="eb-det3" x="150" y="212" width="74" height="15" fill="#4ecdc4"/><text class="eb-det3" x="154" y="223" fill="#06322e">Road · seg</text>
               </g>
             </svg>
             <div class="eb-mock__ai"><i class="fa fa-magic"></i> AI · 3 shapes · 0.92 avg</div>
+            <div class="eb-scan"></div>
           </div>
           <div class="eb-mock__foot"><span><i class="fa fa-object-group"></i> 6 tools</span><span><i class="fa fa-history"></i> Audit</span><span style="margin-left:auto;"><i class="fa fa-check-circle"></i> QA clean</span></div>
         </div>
@@ -176,6 +177,69 @@
       <div class="eb-stat"><div class="eb-stat__num"><span class="eb-count" data-to="6">0</span></div><div class="eb-stat__label">Drawing tools</div></div>
       <div class="eb-stat"><div class="eb-stat__num"><span class="eb-count" data-to="3">0</span></div><div class="eb-stat__label">Review stages</div></div>
       <div class="eb-stat"><div class="eb-stat__num"><span class="eb-count" data-to="4">0</span></div><div class="eb-stat__label">Data types</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SEE IT IN ACTION ===================== -->
+<section class="eb-section eb-section--alt">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Live Demo</span>
+      <h2 class="eb-h2 reveal d1">Watch annotation <span class="accent">happen</span></h2>
+      <p class="eb-lead reveal d2">AI proposes, humans perfect — across 2D imagery and 3D point clouds. Here's the workflow in motion.</p>
+    </div>
+    <div class="eb-grid eb-grid--2">
+      <div class="eb-mock reveal">
+        <div class="eb-mock__bar"><span class="eb-mock__dot"></span><span class="eb-mock__dot"></span><span class="eb-mock__dot g"></span><span class="eb-mock__title">2D · Image annotation</span></div>
+        <div class="eb-mock__canvas">
+            <svg class="eb-mock__scene" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="ebSky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#20304f"/><stop offset="1" stop-color="#34466c"/></linearGradient>
+                <linearGradient id="ebRoad2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b4150"/><stop offset="1" stop-color="#20232b"/></linearGradient>
+              </defs>
+              <rect width="400" height="240" fill="url(#ebSky2)"/>
+              <rect x="16" y="84" width="34" height="46" fill="#1c2740"/><rect x="56" y="68" width="24" height="62" fill="#243052"/>
+              <rect x="322" y="76" width="30" height="54" fill="#1c2740"/><rect x="358" y="62" width="26" height="68" fill="#243052"/>
+              <rect y="128" width="400" height="112" fill="#23262e"/>
+              <polygon points="150,128 250,128 344,240 56,240" fill="url(#ebRoad2)"/>
+              <polygon points="250,128 400,128 400,240 344,240" fill="#2c313c"/>
+              <polygon points="199,150 201,150 203,167 197,167" fill="#e6c74a"/><polygon points="196,178 204,178 207,203 193,203" fill="#e6c74a"/><polygon points="192,214 208,214 213,240 187,240" fill="#e6c74a"/>
+              <g><rect x="78" y="150" width="92" height="40" rx="7" fill="#c1483f"/><rect x="90" y="132" width="66" height="26" rx="7" fill="#d1685f"/><rect x="96" y="136" width="54" height="17" rx="3" fill="#243244"/><circle cx="98" cy="192" r="10" fill="#15171c"/><circle cx="150" cy="192" r="10" fill="#15171c"/></g>
+              <g><circle cx="314" cy="131" r="8" fill="#e2c6a0"/><rect x="306" y="140" width="16" height="27" rx="6" fill="#5b6b8c"/><rect x="308" y="166" width="5" height="20" rx="2" fill="#37405a"/><rect x="315" y="166" width="5" height="20" rx="2" fill="#37405a"/></g>
+              <g font-family="DM Sans, sans-serif" font-size="10" font-weight="700">
+                <g class="eb-det1"><rect x="70" y="126" width="108" height="76" fill="none" stroke="#4da6ff" stroke-width="2"/><rect x="70" y="111" width="88" height="15" fill="#4da6ff"/><text x="74" y="122" fill="#08243d">Vehicle · 0.96</text></g>
+                <g class="eb-det2"><rect x="300" y="119" width="30" height="73" fill="none" stroke="#ff7a7a" stroke-width="2"/><rect x="288" y="105" width="42" height="14" fill="#ff7a7a"/><text x="292" y="115.5" fill="#3a0a0a">Person</text></g>
+                <g class="eb-det3"><polygon points="150,130 250,130 344,236 56,236" fill="#4ecdc4" fill-opacity="0.12" stroke="#4ecdc4" stroke-width="1.5"/><rect x="150" y="212" width="74" height="15" fill="#4ecdc4"/><text x="154" y="223" fill="#06322e">Road · seg</text></g>
+              </g>
+            </svg>
+            <div class="eb-mock__ai"><i class="fa fa-magic"></i> Detecting…</div>
+            <div class="eb-scan"></div>
+        </div>
+        <div class="eb-mock__foot"><span><i class="fa fa-object-group"></i> Bounding box</span><span><i class="fa fa-star-o"></i> Segmentation</span><span style="margin-left:auto;"><i class="fa fa-check-circle"></i> QA</span></div>
+      </div>
+      <div class="eb-mock reveal d1">
+        <div class="eb-mock__bar"><span class="eb-mock__dot"></span><span class="eb-mock__dot"></span><span class="eb-mock__dot g"></span><span class="eb-mock__title">3D · LiDAR point cloud</span></div>
+        <div class="eb-mock__canvas eb-3dwrap">
+            <svg class="eb-mock__scene eb-3d" viewBox="0 0 380 240" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <rect width="380" height="240" fill="#0b1020"/>
+              <g stroke="#1e2b4a" stroke-width="1">
+                <line x1="40" y1="240" x2="150" y2="150"/><line x1="150" y1="240" x2="188" y2="150"/><line x1="260" y1="240" x2="238" y2="150"/><line x1="345" y1="240" x2="288" y2="150"/>
+                <line x1="150" y1="150" x2="288" y2="150"/><line x1="120" y1="182" x2="278" y2="182"/><line x1="92" y1="208" x2="300" y2="208"/>
+              </g>
+              <circle cx="167" cy="114" r="1.6" fill="#5aa9ff" opacity="0.9"/><circle cx="138" cy="150" r="2.0" fill="#7de0d0" opacity="0.47"/><circle cx="182" cy="108" r="0.9" fill="#6fd0e0" opacity="0.48"/><circle cx="198" cy="180" r="1.6" fill="#5aa9ff" opacity="0.77"/><circle cx="177" cy="182" r="0.9" fill="#7de0d0" opacity="0.61"/><circle cx="144" cy="112" r="1.2" fill="#7de0d0" opacity="0.51"/><circle cx="199" cy="117" r="0.9" fill="#5aa9ff" opacity="0.76"/><circle cx="205" cy="143" r="1.5" fill="#8fb8ff" opacity="0.71"/><circle cx="244" cy="132" r="1.1" fill="#7de0d0" opacity="0.83"/><circle cx="157" cy="149" r="1.5" fill="#8fb8ff" opacity="0.85"/><circle cx="163" cy="182" r="1.0" fill="#6fd0e0" opacity="0.54"/><circle cx="170" cy="179" r="1.3" fill="#5aa9ff" opacity="0.87"/><circle cx="199" cy="174" r="1.2" fill="#8fb8ff" opacity="0.78"/><circle cx="200" cy="139" r="1.9" fill="#8fb8ff" opacity="0.71"/><circle cx="211" cy="107" r="1.7" fill="#6fd0e0" opacity="0.61"/><circle cx="175" cy="157" r="0.8" fill="#6fd0e0" opacity="0.65"/><circle cx="204" cy="142" r="1.1" fill="#8fb8ff" opacity="0.52"/><circle cx="158" cy="134" r="1.9" fill="#5aa9ff" opacity="0.54"/><circle cx="177" cy="125" r="1.0" fill="#6fd0e0" opacity="0.93"/><circle cx="162" cy="136" r="1.3" fill="#6fd0e0" opacity="0.98"/><circle cx="145" cy="116" r="1.1" fill="#7de0d0" opacity="0.46"/><circle cx="232" cy="117" r="1.2" fill="#7de0d0" opacity="0.68"/><circle cx="173" cy="148" r="2.0" fill="#5aa9ff" opacity="0.7"/><circle cx="237" cy="180" r="1.7" fill="#6fd0e0" opacity="0.67"/><circle cx="176" cy="141" r="1.3" fill="#7de0d0" opacity="0.49"/><circle cx="153" cy="115" r="1.2" fill="#5aa9ff" opacity="0.51"/><circle cx="199" cy="146" r="2.0" fill="#5aa9ff" opacity="0.49"/><circle cx="153" cy="133" r="1.6" fill="#8fb8ff" opacity="0.78"/><circle cx="187" cy="111" r="1.4" fill="#6fd0e0" opacity="0.71"/><circle cx="166" cy="114" r="1.8" fill="#8fb8ff" opacity="0.71"/><circle cx="215" cy="144" r="1.1" fill="#8fb8ff" opacity="0.53"/><circle cx="196" cy="104" r="1.5" fill="#5aa9ff" opacity="0.83"/><circle cx="159" cy="132" r="1.0" fill="#7de0d0" opacity="0.74"/><circle cx="226" cy="129" r="1.1" fill="#7de0d0" opacity="0.89"/><circle cx="231" cy="163" r="1.1" fill="#6fd0e0" opacity="0.65"/><circle cx="130" cy="104" r="1.2" fill="#8fb8ff" opacity="0.56"/><circle cx="203" cy="130" r="1.9" fill="#8fb8ff" opacity="0.98"/><circle cx="173" cy="120" r="1.1" fill="#7de0d0" opacity="0.64"/><circle cx="188" cy="183" r="1.6" fill="#5aa9ff" opacity="0.71"/><circle cx="210" cy="168" r="0.9" fill="#5aa9ff" opacity="0.95"/><circle cx="226" cy="164" r="1.4" fill="#7de0d0" opacity="0.69"/><circle cx="207" cy="109" r="2.0" fill="#6fd0e0" opacity="0.7"/><circle cx="221" cy="109" r="1.0" fill="#7de0d0" opacity="0.47"/><circle cx="202" cy="140" r="1.7" fill="#6fd0e0" opacity="0.81"/><circle cx="171" cy="147" r="1.0" fill="#5aa9ff" opacity="0.89"/><circle cx="219" cy="110" r="1.8" fill="#7de0d0" opacity="0.69"/><circle cx="322" cy="197" r="1.1" fill="#8fb8ff" opacity="0.57"/><circle cx="190" cy="186" r="1.2" fill="#6fd0e0" opacity="0.91"/><circle cx="34" cy="182" r="2.0" fill="#6fd0e0" opacity="0.9"/><circle cx="325" cy="80" r="1.0" fill="#5aa9ff" opacity="0.93"/><circle cx="288" cy="160" r="1.8" fill="#7de0d0" opacity="0.54"/><circle cx="181" cy="180" r="1.5" fill="#8fb8ff" opacity="0.83"/><circle cx="201" cy="139" r="1.8" fill="#5aa9ff" opacity="0.59"/><circle cx="111" cy="188" r="1.5" fill="#5aa9ff" opacity="0.87"/><circle cx="337" cy="132" r="1.6" fill="#7de0d0" opacity="0.83"/><circle cx="173" cy="148" r="1.4" fill="#7de0d0" opacity="0.83"/><circle cx="324" cy="216" r="1.1" fill="#7de0d0" opacity="0.91"/><circle cx="61" cy="78" r="1.4" fill="#5aa9ff" opacity="0.82"/><circle cx="164" cy="94" r="1.2" fill="#5aa9ff" opacity="0.94"/><circle cx="67" cy="178" r="1.7" fill="#7de0d0" opacity="0.59"/><circle cx="61" cy="137" r="1.8" fill="#5aa9ff" opacity="0.67"/><circle cx="185" cy="224" r="1.9" fill="#7de0d0" opacity="0.84"/><circle cx="366" cy="126" r="1.3" fill="#8fb8ff" opacity="0.63"/><circle cx="269" cy="61" r="1.5" fill="#6fd0e0" opacity="0.84"/><circle cx="149" cy="145" r="1.2" fill="#5aa9ff" opacity="0.51"/><circle cx="339" cy="96" r="1.9" fill="#5aa9ff" opacity="0.6"/><circle cx="26" cy="189" r="1.2" fill="#7de0d0" opacity="0.9"/><circle cx="314" cy="172" r="2.0" fill="#6fd0e0" opacity="0.53"/><circle cx="339" cy="154" r="1.7" fill="#5aa9ff" opacity="0.6"/><circle cx="297" cy="89" r="2.0" fill="#8fb8ff" opacity="0.97"/><circle cx="238" cy="193" r="0.9" fill="#7de0d0" opacity="0.49"/><circle cx="319" cy="134" r="1.2" fill="#6fd0e0" opacity="0.96"/><circle cx="107" cy="80" r="1.5" fill="#7de0d0" opacity="0.97"/><circle cx="357" cy="102" r="1.0" fill="#8fb8ff" opacity="0.8"/><circle cx="201" cy="93" r="1.4" fill="#7de0d0" opacity="0.6"/><circle cx="298" cy="225" r="0.8" fill="#5aa9ff" opacity="0.85"/><circle cx="208" cy="90" r="1.4" fill="#6fd0e0" opacity="0.51"/><circle cx="304" cy="131" r="1.4" fill="#6fd0e0" opacity="0.98"/><circle cx="122" cy="94" r="1.1" fill="#7de0d0" opacity="0.91"/><circle cx="264" cy="165" r="1.3" fill="#8fb8ff" opacity="0.99"/><circle cx="310" cy="60" r="1.6" fill="#8fb8ff" opacity="0.69"/><circle cx="32" cy="170" r="1.3" fill="#8fb8ff" opacity="0.78"/><circle cx="259" cy="66" r="1.0" fill="#8fb8ff" opacity="0.7"/><circle cx="106" cy="220" r="2.1" fill="#8fb8ff" opacity="0.58"/><circle cx="356" cy="110" r="1.3" fill="#5aa9ff" opacity="0.63"/><circle cx="42" cy="105" r="1.7" fill="#7de0d0" opacity="0.73"/><circle cx="14" cy="102" r="0.9" fill="#6fd0e0" opacity="0.77"/><circle cx="152" cy="108" r="1.6" fill="#5aa9ff" opacity="0.77"/><circle cx="200" cy="184" r="1.7" fill="#6fd0e0" opacity="0.87"/><circle cx="269" cy="141" r="1.2" fill="#7de0d0" opacity="0.47"/><circle cx="309" cy="208" r="1.6" fill="#7de0d0" opacity="0.95"/><circle cx="280" cy="154" r="1.9" fill="#5aa9ff" opacity="0.9"/><circle cx="220" cy="208" r="1.7" fill="#7de0d0" opacity="0.5"/><circle cx="27" cy="165" r="2.0" fill="#6fd0e0" opacity="0.91"/><circle cx="211" cy="163" r="1.6" fill="#7de0d0" opacity="0.72"/>
+              <g class="eb-cuboid" stroke="#4ecdc4" stroke-width="2" fill="none">
+                <rect x="150" y="94" width="110" height="70" stroke-opacity="0.5"/>
+                <line x1="120" y1="120" x2="150" y2="94"/><line x1="230" y1="120" x2="260" y2="94"/><line x1="230" y1="190" x2="260" y2="164"/><line x1="120" y1="190" x2="150" y2="164"/>
+                <rect x="120" y="120" width="110" height="70"/>
+                <line x1="175" y1="155" x2="175" y2="120" stroke="#7de0d0"/>
+              </g>
+              <g class="eb-cuboid" font-family="DM Sans, sans-serif" font-size="11" font-weight="700"><rect x="120" y="104" width="62" height="16" fill="#4ecdc4"/><text x="125" y="116" fill="#06322e">Car · 3D</text></g>
+            </svg>
+            <div class="eb-mock__ai"><i class="fa fa-cube"></i> 3D cuboid</div>
+        </div>
+        <div class="eb-mock__foot"><span><i class="fa fa-cube"></i> 3D cuboid</span><span><i class="fa fa-refresh"></i> Orbit view</span><span style="margin-left:auto;"><i class="fa fa-crosshairs"></i> LiDAR</span></div>
+      </div>
     </div>
   </div>
 </section>
