@@ -50,8 +50,8 @@
           <a href="insights.html#blog"><i class="fa fa-lightbulb-o"></i><span>Blog</span></a>
           <a href="insights.html#case-studies"><i class="fa fa-line-chart"></i><span>Case Studies</span></a>
           <a href="insights.html#white-papers"><i class="fa fa-file-text-o"></i><span>White Papers</span></a>
-          <a href="insights.html#reports"><i class="fa fa-bar-chart"></i><span>Analyst Reports</span></a>
-          <a href="insights.html#news"><i class="fa fa-newspaper-o"></i><span>In the News</span></a>
+          <a href="insights.html#reports"><i class="fa fa-bar-chart"></i><span>Reports &amp; Research</span></a>
+          <a href="insights.html#news"><i class="fa fa-newspaper-o"></i><span>Newsroom</span></a>
           <a href="insights.html#events"><i class="fa fa-calendar"></i><span>Events</span></a>
         </div>
       </li>
@@ -95,8 +95,8 @@
     <a href="insights.html#blog">Blog</a>
     <a href="insights.html#case-studies">Case Studies</a>
     <a href="insights.html#white-papers">White Papers</a>
-    <a href="insights.html#reports">Analyst Reports</a>
-    <a href="insights.html#news">In the News</a>
+    <a href="insights.html#reports">Reports &amp; Research</a>
+    <a href="insights.html#news">Newsroom</a>
     <a href="insights.html#events">Events</a>
   </div>
   <div class="grp-label">Company</div>
@@ -118,13 +118,14 @@
 
 <section class="eb-section" style="padding-bottom:0;">
   <div class="eb-container">
-    <div class="eb-filter reveal">
-      <a href="#blog" class="active">Blog</a>
-      <a href="#case-studies">Case Studies</a>
-      <a href="#white-papers">White Papers</a>
-      <a href="#reports">Analyst Reports</a>
-      <a href="#news">In the News</a>
-      <a href="#events">Events</a>
+    <div class="eb-filter reveal" id="ebInsightsFilter">
+      <a href="#" data-filter="all" class="active">All</a>
+      <a href="#blog" data-filter="blog">Blog</a>
+      <a href="#case-studies" data-filter="case-studies">Case Studies</a>
+      <a href="#white-papers" data-filter="white-papers">White Papers</a>
+      <a href="#reports" data-filter="reports">Reports &amp; Research</a>
+      <a href="#news" data-filter="news">Newsroom</a>
+      <a href="#events" data-filter="events">Events</a>
     </div>
   </div>
 </section>
@@ -137,12 +138,12 @@
     </div>
     <div class="eb-grid eb-grid--3">
       <div class="eb-post reveal">
-        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#0071bc,#004a7c);"><i class="fa fa-lightbulb-o"></i><span class="eb-post__cat">Blog</span></div>
+        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#005cff,#0c0032);"><i class="fa fa-lightbulb-o"></i><span class="eb-post__cat">Blog</span></div>
         <div class="eb-post__body">
           <div class="eb-post__meta">Blog · 6 min read</div>
           <h3>Why AI pre-labeling makes annotators better, not obsolete</h3>
-          <p>The best pipelines put models and people on the same team. Here's how we split the work.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <p>The better our models pre-label, the more valuable skilled annotators become. Here's why.</p>
+          <a href="post-ai-prelabeling.html" class="eb-link-arrow">Read article <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
@@ -150,8 +151,8 @@
         <div class="eb-post__body">
           <div class="eb-post__meta">Blog · 4 min read</div>
           <h3>Trust &amp; Safety is a people problem first</h3>
-          <p>Why moderator wellbeing is inseparable from moderation quality — and what we do about it.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <p>Moderation quality is inseparable from moderator wellbeing. How we build safety ops that last.</p>
+          <a href="post-trust-safety.html" class="eb-link-arrow">Read article <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
@@ -159,8 +160,8 @@
         <div class="eb-post__body">
           <div class="eb-post__meta">Blog · 5 min read</div>
           <h3>Five ways bias sneaks into your training data</h3>
-          <p>Practical checks to catch bias before it ships inside your model's decisions.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <p>Bias enters through the data, not the algorithm. Five common sources and how to catch them.</p>
+          <a href="post-bias-in-training-data.html" class="eb-link-arrow">Read article <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -176,19 +177,19 @@
       <div class="eb-post reveal">
         <div class="eb-post__thumb" style="background:linear-gradient(135deg,#1f7a4d,#0d3d27);"><i class="fa fa-line-chart"></i><span class="eb-post__cat">Case Study</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Case Study</div>
-          <h3>How a mobility client cut labeling time 3×</h3>
-          <p>Batch AI annotation plus a tuned review workflow compressed a six-week backlog into two.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">Autonomous &amp; Mobility</div>
+          <h3>Cutting LiDAR labeling time 3× without losing accuracy</h3>
+          <p>AI pre-labeling, object tracking, and staged review compressed a six-week backlog into two.</p>
+          <a href="case-autonomous-mobility.html" class="eb-link-arrow">Read case study <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
-        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#0071bc,#004a7c);"><i class="fa fa-shopping-cart"></i><span class="eb-post__cat">Case Study</span></div>
+        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#005cff,#0c0032);"><i class="fa fa-shopping-cart"></i><span class="eb-post__cat">Case Study</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Case Study</div>
-          <h3>Cleaning a marketplace catalog of 4M listings</h3>
-          <p>Attribute extraction and moderation that lifted search relevance and buyer trust.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">Retail &amp; eCommerce</div>
+          <h3>Cleaning a 4-million-listing marketplace catalog</h3>
+          <p>Attribute extraction and moderation that lifted search relevance and buyer trust at scale.</p>
+          <a href="case-marketplace-catalog.html" class="eb-link-arrow">Read case study <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -205,18 +206,18 @@
         <div class="eb-post__thumb" style="background:linear-gradient(135deg,#5a3a9e,#2d1d52);"><i class="fa fa-file-text-o"></i><span class="eb-post__cat">White Paper</span></div>
         <div class="eb-post__body">
           <div class="eb-post__meta">White Paper · PDF</div>
-          <h3>A practical framework for bias-aware annotation</h3>
-          <p>Concrete guidelines, QA checks, and team structures for reducing bias at the source.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <h3>A practical framework for bias-aware data annotation</h3>
+          <p>Guidelines, QA checks, and team structures for reducing bias at the source — before it reaches your model.</p>
+          <a href="contact.html?topic=whitepaper-bias" class="eb-link-arrow">Request the paper <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
         <div class="eb-post__thumb" style="background:linear-gradient(135deg,#5a3a9e,#2d1d52);"><i class="fa fa-cubes"></i><span class="eb-post__cat">White Paper</span></div>
         <div class="eb-post__body">
           <div class="eb-post__meta">White Paper · PDF</div>
-          <h3>Designing datasets that actually move the metric</h3>
+          <h3>Designing datasets that move the metric</h3>
           <p>Sampling, balancing, and evaluation strategies for production-grade training data.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <a href="contact.html?topic=whitepaper-datasets" class="eb-link-arrow">Request the paper <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -225,26 +226,26 @@
 <section class="eb-section eb-section--alt" id="reports">
   <div class="eb-container">
     <div class="eb-center eb-narrow" style="margin-bottom:44px;">
-      <span class="eb-eyebrow reveal">Analyst Reports</span>
+      <span class="eb-eyebrow reveal">Reports &amp; Research</span>
       <h2 class="eb-h2 reveal d1">The bigger <span class="accent">picture</span></h2>
     </div>
     <div class="eb-grid eb-grid--3">
       <div class="eb-post reveal">
         <div class="eb-post__thumb" style="background:linear-gradient(135deg,#a15a1e,#5c320f);"><i class="fa fa-bar-chart"></i><span class="eb-post__cat">Report</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Industry Report</div>
-          <h3>The state of RLHF data operations in 2026</h3>
-          <p>What high-performing teams do differently when sourcing human-preference data at scale.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">EnhanceBiz Research</div>
+          <h3>The State of Data Annotation, 2026</h3>
+          <p>Our research on how high-performing teams source, review, and scale human-labeled data this year.</p>
+          <a href="contact.html?topic=report-annotation" class="eb-link-arrow">Request the report <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
         <div class="eb-post__thumb" style="background:linear-gradient(135deg,#a15a1e,#5c320f);"><i class="fa fa-globe"></i><span class="eb-post__cat">Report</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Industry Report</div>
-          <h3>Global trust &amp; safety benchmarks</h3>
-          <p>How leading platforms staff, measure, and support their moderation operations.</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">EnhanceBiz Research</div>
+          <h3>Global Trust &amp; Safety Benchmarks</h3>
+          <p>How leading platforms staff, measure, and support their content-moderation operations.</p>
+          <a href="contact.html?topic=report-trust" class="eb-link-arrow">Request the report <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
@@ -253,29 +254,30 @@
 <section class="eb-section" id="news">
   <div class="eb-container">
     <div class="eb-center eb-narrow" style="margin-bottom:44px;">
-      <span class="eb-eyebrow reveal">In the News</span>
-      <h2 class="eb-h2 reveal d1">EnhanceBiz in the <span class="accent">press</span></h2>
+      <span class="eb-eyebrow reveal">Newsroom</span>
+      <h2 class="eb-h2 reveal d1">EnhanceBiz <span class="accent">news</span></h2>
     </div>
     <div class="eb-grid eb-grid--3">
       <div class="eb-post reveal">
-        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#0071bc,#004a7c);"><i class="fa fa-newspaper-o"></i><span class="eb-post__cat">In the News</span></div>
+        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#005cff,#0c0032);"><i class="fa fa-bullhorn"></i><span class="eb-post__cat">Newsroom</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Press · 2026</div>
-          <h3>EnhanceBiz launches AnnotateMe 2.0</h3>
-          <p>Coverage of our AI-assisted annotation platform's latest release. (Placeholder.)</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">Announcement</div>
+          <h3>EnhanceBiz expands AI &amp; Data Operations services</h3>
+          <p>We're growing our annotation, RLHF, and evaluation capacity for enterprise AI teams.</p>
+          <a href="contact.html" class="eb-link-arrow">Contact press <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
-        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#b23a48,#5f1e26);"><i class="fa fa-microphone"></i><span class="eb-post__cat">In the News</span></div>
+        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#1f7a7a,#0d3d3d);"><i class="fa fa-rocket"></i><span class="eb-post__cat">Newsroom</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Podcast</div>
-          <h3>On the human side of AI data</h3>
-          <p>Our team joins the conversation on ethical, human-in-the-loop AI. (Placeholder.)</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">Product</div>
+          <h3>AnnotateMe adds new export formats &amp; review tooling</h3>
+          <p>The latest on our AI-assisted annotation platform.</p>
+          <a href="annotateme.html" class="eb-link-arrow">See AnnotateMe <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
+    <p class="eb-center" style="margin-top:24px;color:var(--muted);font-size:14px;"><em>Newsroom items are starter placeholders — send us your real announcements and coverage to publish.</em></p>
   </div>
 </section>
 <section class="eb-section eb-section--alt" id="events">
@@ -288,22 +290,23 @@
       <div class="eb-post reveal">
         <div class="eb-post__thumb" style="background:linear-gradient(135deg,#1f7a7a,#0d3d3d);"><i class="fa fa-calendar"></i><span class="eb-post__cat">Event</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Upcoming · 2026</div>
-          <h3>Meet us at the AI Data Summit</h3>
-          <p>Booth and speaking session on scaling annotation quality. (Placeholder.)</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">Webinar · On-demand</div>
+          <h3>Building a Trust &amp; Safety operation from scratch</h3>
+          <p>A practical walkthrough for platform teams — staffing, tooling, and wellbeing.</p>
+          <a href="contact.html?topic=webinar-trust" class="eb-link-arrow">Register / watch <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
       <div class="eb-post reveal">
-        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#1f7a4d,#0d3d27);"><i class="fa fa-video-camera"></i><span class="eb-post__cat">Event</span></div>
+        <div class="eb-post__thumb" style="background:linear-gradient(135deg,#1f7a4d,#0d3d27);"><i class="fa fa-users"></i><span class="eb-post__cat">Event</span></div>
         <div class="eb-post__body">
-          <div class="eb-post__meta">Webinar · On-demand</div>
-          <h3>Building a trust &amp; safety operation from scratch</h3>
-          <p>A practical walkthrough for platform teams. (Placeholder.)</p>
-          <a href="#" class="eb-link-arrow">Read more <i class="fa fa-arrow-right"></i></a>
+          <div class="eb-post__meta">Meetup</div>
+          <h3>Talk to us about your AI data program</h3>
+          <p>Book time with our team to scope annotation, moderation, or CX work.</p>
+          <a href="contact.html" class="eb-link-arrow">Book a slot <i class="fa fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
+    <p class="eb-center" style="margin-top:24px;color:var(--muted);font-size:14px;"><em>Event listings are starter placeholders — share your real dates and we'll publish them.</em></p>
   </div>
 </section>
 <section class="eb-section">
@@ -316,7 +319,6 @@
           <input type="email" placeholder="Your work email" required>
           <button class="eb-btn eb-btn--primary" type="submit">Subscribe</button>
         </form>
-        <p style="color:rgba(255,255,255,0.5);font-size:13px;margin-top:18px;"><em>All articles are illustrative placeholders — send us your real content and we'll publish it.</em></p>
       </div>
     </div>
   </div>
@@ -354,6 +356,7 @@
   </div>
 </footer>
 <script src="js/eb-site.js"></script>
+<script src="js/insights.js"></script>
 <script src="js/eb-chatbot.js"></script>
 </body>
 </html>

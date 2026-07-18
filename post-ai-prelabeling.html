@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us | EnhanceBiz</title>
-  <meta name="description" content="The story behind EnhanceBiz — a data-annotation and AI training-data company built on an obsession with process, quality, and doing right by data. Our mission, vision, and values.">
+  <title>Why AI pre-labeling makes annotators better, not obsolete | EnhanceBiz Insights</title>
+  <meta name="description" content="AI pre-labeling doesn't replace human annotators — it moves them up the value chain to judgment, edge cases, and quality.">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/enhancebiz.css?v=7">
@@ -110,87 +110,47 @@
 
 <header class="eb-pagehead">
   <div class="eb-container">
-    <div class="eb-crumb"><a href="index.html">Home</a><span class="sep">/</span>About</div>
-    <h1>About <span class="accent">EnhanceBiz</span></h1>
-    <p>We started out running operations for other people's businesses. Turns out that obsession with process is exactly what good AI data demands.</p>
+    <div class="eb-crumb"><a href="index.html">Home</a><span class="sep">/</span><a href="insights.html">Insights</a><span class="sep">/</span>Blog</div>
+    <h1 style="max-width:820px;">Why AI pre-labeling makes annotators better, not obsolete</h1>
+    <p style="color:var(--muted);font-size:15px;">Blog · 6 min read · By the EnhanceBiz Data Operations team</p>
   </div>
 </header>
 
-<!-- STORY -->
 <section class="eb-section">
   <div class="eb-container">
-    <div class="eb-hero__grid" style="align-items:center;">
-      <div class="reveal">
-        <span class="eb-eyebrow">Our Story</span>
-        <h2 class="eb-h2">From business process expertise to <span class="accent">AI data leadership</span></h2>
-        <div class="eb-prose" style="margin-top:16px;">
-          <p>EnhanceBiz began as a business process outsourcing company, delivering call center and customer support operations for global clients. As AI reshaped every industry, we saw where our strengths in disciplined, human-in-the-loop operations could matter most: building the training data behind modern machine learning.</p>
-          <p>Today we combine that operational heritage with our own technology — <strong>AnnotateMe</strong>, an AI-assisted annotation platform — to deliver annotation, NLP, and AI/ML dataset services at scale.</p>
-          <p style="color:var(--muted);font-size:14px;"><em>Note: company history details above are placeholders — share your real founding story and milestones and we'll drop them in.</em></p>
-        </div>
-      </div>
-      <div class="eb-grid eb-grid--2 reveal d1" style="gap:16px;">
-        <div class="eb-card eb-center"><div class="eb-stat__num" style="font-size:38px;">1M+</div><div class="eb-stat__label">Data points annotated</div></div>
-        <div class="eb-card eb-center"><div class="eb-stat__num" style="font-size:38px;">24/7</div><div class="eb-stat__label">Global delivery</div></div>
-        <div class="eb-card eb-center"><div class="eb-stat__num" style="font-size:38px;">99.2%</div><div class="eb-stat__label">QA accuracy</div></div>
-        <div class="eb-card eb-center"><div class="eb-stat__num" style="font-size:38px;">1</div><div class="eb-stat__label">Proprietary platform</div></div>
-      </div>
+    <div class="eb-narrow eb-prose reveal in">
+      <p>Every few months someone declares that AI will make human data labelers obsolete. The reality on the ground is almost the opposite: the better our models get at pre-labeling, the <strong>more</strong> valuable skilled human annotators become — because their work shifts from clicking boxes to making judgment calls.</p>
+      <h2>What pre-labeling actually does</h2>
+      <p>When a model like YOLOv8 runs across a batch of frames first, it produces a draft: bounding boxes, masks, and class guesses with confidence scores. On common objects in clean conditions, that draft is 80–90% correct. Instead of drawing every box from scratch, an annotator reviews, corrects, and confirms. On a typical autonomous-driving dataset, that alone cuts hands-on time by 60–80%.</p>
+      <h2>The work that's left is the work that matters</h2>
+      <p>Here's the part people miss: the boxes AI gets right were never where the value was. The value lives in the hard 10–20% — the occluded pedestrian, the reflection that looks like a second vehicle, the ambiguous class boundary between "truck" and "van." Those cases need a human who understands the labeling guidelines and the downstream model's failure modes.</p>
+      <p>So pre-labeling doesn't remove the human; it <em>concentrates</em> human attention on exactly the frames where a mistake would hurt the model most. That's a better use of expensive human judgment, not a smaller one.</p>
+      <h2>Why this raises quality, not just speed</h2>
+      <ul class="bullets">
+        <li><strong>Less fatigue.</strong> Drawing thousands of identical boxes is where errors creep in. Reviewing is less fatiguing than creating, so accuracy on the hard cases goes up.</li>
+        <li><strong>Consistent starting point.</strong> The model applies the same criteria to every frame, so annotators correct against a consistent baseline instead of drifting.</li>
+        <li><strong>Active learning.</strong> Confidence scores tell us which frames the model found hardest — we route those to senior reviewers first.</li>
+      </ul>
+      <h2>The human-in-the-loop flywheel</h2>
+      <p>Corrected labels become training data. The next model version pre-labels better. Annotators are freed to focus on an even narrower band of genuinely hard cases. Each turn of the loop makes both the model and the team more effective. That's the flywheel we build for clients on AnnotateMe — and it's why we treat "human-in-the-loop" as a permanent design principle, not a temporary crutch.</p>
     </div>
   </div>
 </section>
 
-<!-- MISSION & VISION -->
-<section class="eb-section eb-section--alt" id="mission">
-  <div class="eb-container">
-    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
-      <span class="eb-eyebrow reveal">Mission & Vision</span>
-      <h2 class="eb-h2 reveal d1">Why we do <span class="accent">this work</span></h2>
-    </div>
-    <div class="eb-grid eb-grid--2" style="margin-bottom:24px;">
-      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-bullseye"></i></div><h3>Our Mission</h3><p>Make trustworthy training data the default, not the luxury — so any team, at any budget, can build AI that behaves once it leaves the lab.</p></div>
-      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-eye"></i></div><h3>Our Vision</h3><p>A world where the data behind AI is held to the same standard as the decisions that data goes on to make.</p></div>
-    </div>
-    <div class="eb-grid eb-grid--3">
-      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-globe"></i></div><h3>Represent Everyone</h3><p>Data that reflects the whole world — not just the loudest, best-resourced slice of it.</p></div>
-      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-balance-scale"></i></div><h3>Do It Right</h3><p>Fair work, transparent process, and data handled like it's someone's private life — because often it is.</p></div>
-      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-trophy"></i></div><h3>Set the Bar</h3><p>We'd rather define what "good annotation" means than settle for the industry average.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- VALUES -->
-<section class="eb-section">
-  <div class="eb-container">
-    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
-      <span class="eb-eyebrow reveal">Our Values</span>
-      <h2 class="eb-h2 reveal d1">What we stand <span class="accent">for</span></h2>
-    </div>
-    <div class="eb-grid eb-grid--4">
-      <div class="eb-why reveal"><div class="eb-why__icon"><i class="fa fa-gem"></i></div><h3>Quality</h3><p>QA-verified data, every time.</p></div>
-      <div class="eb-why reveal d1"><div class="eb-why__icon"><i class="fa fa-handshake-o"></i></div><h3>Partnership</h3><p>Your goals become our roadmap.</p></div>
-      <div class="eb-why reveal d2"><div class="eb-why__icon"><i class="fa fa-shield"></i></div><h3>Trust</h3><p>Security and transparency by default.</p></div>
-      <div class="eb-why reveal d3"><div class="eb-why__icon"><i class="fa fa-bolt"></i></div><h3>Innovation</h3><p>Always improving our tools and process.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
 <section class="eb-section eb-section--alt">
   <div class="eb-container">
     <div class="eb-cta reveal">
       <div class="eb-cta__inner">
-        <h2>Let's build something intelligent</h2>
-        <p>Partner with EnhanceBiz for data services and tooling that move your AI forward.</p>
+        <h2>Want a pipeline that gets faster every month?</h2>
+        <p>We combine AI pre-labeling with expert review so your effort compounds. Let's scope it.</p>
         <div class="eb-cta__actions">
-          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-paper-plane"></i> Get in Touch</a>
-          <a href="careers.html" class="eb-btn eb-btn--outline-light eb-btn--lg"><i class="fa fa-briefcase"></i> Join Our Team</a>
+          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-paper-plane"></i> Talk to our team</a>
+          <a href="insights.html" class="eb-btn eb-btn--outline-light eb-btn--lg"><i class="fa fa-arrow-left"></i> Back to Insights</a>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer class="eb-footer">
   <div class="eb-container">
     <div class="eb-footer__grid">
@@ -222,7 +182,6 @@
     </div>
   </div>
 </footer>
-
 <script src="js/eb-site.js"></script>
 <script src="js/eb-chatbot.js"></script>
 </body>
