@@ -7,6 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $lname = trim($_POST['lname']);
     $from = trim($_POST['email']);
     $company = trim($_POST['company']);
+    $interest = trim($_POST['interest'] ?? '');
     $messageBody = trim($_POST['message']);
 
     // Validate email
@@ -21,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = "Name: $fname $lname\n";
     $message .= "Company: $company\n";
     $message .= "Email: $from\n";
+    $message .= "Interested in: $interest\n";
     $message .= "Message:\n$messageBody";
 
     // Set headers

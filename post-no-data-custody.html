@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your AI agents shouldn't need a copy of your data | EnhanceBiz Insights</title>
+  <meta name="description" content="Why enterprise AI agents stall on data custody, and how reading source systems in the moment changes the security conversation.">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/enhancebiz.css?v=12">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="eb-nav" id="ebNav">
+  <div class="eb-nav__inner">
+    <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>Enhance<span>Biz</span></a>
+    <ul class="eb-menu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="indicusai.html">Platform <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="indicusai.html" class="featured"><i class="fa fa-bolt"></i><span>IndicusAI Overview<span class="dd-sub">Enterprise agents, no data custody</span></span></a>
+          <a href="indicusai.html#custody"><i class="fa fa-eye-slash"></i><span>No Data Custody<span class="dd-sub">Retention you set and can test</span></span></a>
+          <a href="indicusai.html#engine"><i class="fa fa-cogs"></i><span>Cognitive Engine<span class="dd-sub">Plan, execute, verify, remember</span></span></a>
+          <a href="indicusai.html#pipelines"><i class="fa fa-code-fork"></i><span>Agents &amp; Pipelines<span class="dd-sub">Validated control flow</span></span></a>
+          <a href="indicusai.html#governance"><i class="fa fa-shield"></i><span>Governance<span class="dd-sub">Access, approvals, budgets, evals</span></span></a>
+          <a href="indicusai.html#deploy"><i class="fa fa-cloud"></i><span>Deployment<span class="dd-sub">Hosted or in your VPC</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="solutions.html">Solutions <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="solutions.html#assistant"><i class="fa fa-comments"></i><span>Customer Assistant</span></a>
+          <a href="solutions.html#voice"><i class="fa fa-phone"></i><span>Voice Agents</span></a>
+          <a href="solutions.html#dispatch"><i class="fa fa-wrench"></i><span>Smart Dispatch</span></a>
+          <a href="solutions.html#security"><i class="fa fa-shield"></i><span>Security Operations</span></a>
+          <a href="solutions.html#revenue"><i class="fa fa-medkit"></i><span>Revenue Cycle</span></a>
+          <a href="solutions.html#identity"><i class="fa fa-id-badge"></i><span>Identity &amp; Access Reviews</span></a>
+          <a href="solutions.html#utilities"><i class="fa fa-bolt"></i><span>Utilities</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="indicusai.html">Products <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="indicusai.html" class="featured"><i class="fa fa-bolt"></i><span>IndicusAI<span class="dd-sub">Agentic AI platform</span></span></a>
+          <a href="annotateme.html"><i class="fa fa-object-group"></i><span>AnnotateMe<span class="dd-sub">AI-assisted annotation platform</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="services.html">Data Services <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="data-annotations.html"><i class="fa fa-object-group"></i><span>Data Annotation<span class="dd-sub">Image, video, text &amp; 3D labeling</span></span></a>
+          <a href="services.html#aiml"><i class="fa fa-cubes"></i><span>AI &amp; Data Operations<span class="dd-sub">Curation, RLHF, evaluations</span></span></a>
+          <a href="services.html#trust"><i class="fa fa-shield"></i><span>Trust &amp; Safety<span class="dd-sub">Content moderation &amp; review</span></span></a>
+          <a href="services.html#nlp"><i class="fa fa-language"></i><span>NLP &amp; Linguistic<span class="dd-sub">NER, sentiment, transcription</span></span></a>
+          <a href="services.html#cx"><i class="fa fa-headphones"></i><span>Customer Experience<span class="dd-sub">CX, call center, support</span></span></a>
+          <a href="industries.html"><i class="fa fa-industry"></i><span>Industries<span class="dd-sub">Data services by vertical</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="insights.html">Insights <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="insights.html#blog"><i class="fa fa-lightbulb-o"></i><span>Blog</span></a>
+          <a href="insights.html#case-studies"><i class="fa fa-line-chart"></i><span>Case Studies</span></a>
+          <a href="insights.html#white-papers"><i class="fa fa-file-text-o"></i><span>White Papers</span></a>
+          <a href="insights.html#reports"><i class="fa fa-bar-chart"></i><span>Reports &amp; Research</span></a>
+          <a href="insights.html#news"><i class="fa fa-newspaper-o"></i><span>Newsroom</span></a>
+          <a href="insights.html#events"><i class="fa fa-calendar"></i><span>Events</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="about.html">Company <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="about.html"><i class="fa fa-info-circle"></i><span>About Us</span></a>
+          <a href="careers.html"><i class="fa fa-briefcase"></i><span>Careers</span></a>
+          <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </li>
+    </ul>
+    <div class="eb-nav__cta">
+      <button class="eb-burger" id="ebBurger" aria-label="Menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div class="eb-mobile" id="ebMobile">
+  <a href="index.html">Home</a>
+  <div class="grp-label">Platform</div>
+  <div class="sub">
+    <a href="indicusai.html">IndicusAI Overview</a>
+    <a href="indicusai.html#custody">No Data Custody</a>
+    <a href="indicusai.html#engine">Cognitive Engine</a>
+    <a href="indicusai.html#pipelines">Agents &amp; Pipelines</a>
+    <a href="indicusai.html#governance">Governance</a>
+    <a href="indicusai.html#deploy">Deployment</a>
+  </div>
+  <div class="grp-label">Solutions</div>
+  <div class="sub">
+    <a href="solutions.html#assistant">Customer Assistant</a>
+    <a href="solutions.html#voice">Voice Agents</a>
+    <a href="solutions.html#dispatch">Smart Dispatch</a>
+    <a href="solutions.html#security">Security Operations</a>
+    <a href="solutions.html#revenue">Revenue Cycle</a>
+    <a href="solutions.html#identity">Identity &amp; Access Reviews</a>
+    <a href="solutions.html#utilities">Utilities</a>
+  </div>
+  <div class="grp-label">Products</div>
+  <div class="sub">
+    <a href="indicusai.html">IndicusAI</a>
+    <a href="annotateme.html">AnnotateMe</a>
+  </div>
+  <div class="grp-label">Data Services</div>
+  <div class="sub">
+    <a href="data-annotations.html">Data Annotation</a>
+    <a href="services.html#aiml">AI &amp; Data Operations</a>
+    <a href="services.html#trust">Trust &amp; Safety</a>
+    <a href="services.html#nlp">NLP &amp; Linguistic</a>
+    <a href="services.html#cx">Customer Experience</a>
+    <a href="industries.html">Industries</a>
+  </div>
+  <div class="grp-label">Insights</div>
+  <div class="sub">
+    <a href="insights.html#blog">Blog</a>
+    <a href="insights.html#case-studies">Case Studies</a>
+    <a href="insights.html#white-papers">White Papers</a>
+    <a href="insights.html#reports">Reports &amp; Research</a>
+    <a href="insights.html#news">Newsroom</a>
+    <a href="insights.html#events">Events</a>
+  </div>
+  <div class="grp-label">Company</div>
+  <div class="sub">
+    <a href="about.html">About Us</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="eb-btn eb-btn--primary">Book a Demo</a>
+</div>
+
+<header class="eb-pagehead">
+  <div class="eb-container">
+    <div class="eb-crumb"><a href="index.html">Home</a><span class="sep">/</span><a href="insights.html">Insights</a><span class="sep">/</span>Blog</div>
+    <h1 style="max-width:820px;">Your AI agents shouldn't need a copy of your data</h1>
+    <p style="color:var(--muted);font-size:15px;">Blog · 4 min read · By the IndicusAI team</p>
+  </div>
+</header>
+
+<section class="eb-section">
+  <div class="eb-container">
+    <div class="eb-narrow eb-prose reveal in">
+      <p>Ask why an enterprise AI agent project stalled and you rarely hear that the agent couldn't do the work. More often it never got that far. Somewhere between the demo and production, the platform asked for the data, and security, compliance and procurement all had questions.</p>
+      <h2>The custody problem</h2>
+      <p>Most agent platforms start by ingesting: customer records are copied into the vendor's environment so the agent can search them. Each copy is a new trust boundary. It raises questions about residency and liability, and it starts going stale the moment the sync finishes.</p>
+      <p>Those are reasonable objections. The answer isn't a better security questionnaire. It's not creating the copy.</p>
+      <h2>A visitor, not a warehouse</h2>
+      <p>Open protocols like MCP make a different shape possible. The agent holds no warehouse of your records. When it needs an answer, it asks the source system, with credentials you control, and works with what comes back. Your systems remain the system of record, and your existing permissions remain the boundary.</p>
+      <h2>Two settings that make the boundary explicit</h2>
+      <ul class="bullets">
+        <li><strong>Retention.</strong> In metadata mode, prompts and tool results aren't written to the platform's database. Operational facts like cost, latency and outcome still are, because you need them to run the thing.</li>
+        <li><strong>Model gateway.</strong> A model call carries content too. Routing it through Amazon Bedrock or Google Vertex in your own cloud keeps inference inside your account.</li>
+      </ul>
+      <h2>Prove the absence</h2>
+      <p>"We don't store your data" is a claim about what is not in a database, so the only honest way to check it is to look. In IndicusAI, every content write goes through one place, and our tests read the columns back after a run to assert that the content isn't there. That single write path is also why we built our own engine: a framework could write somewhere we couldn't see.</p>
+      <h2>Where to start</h2>
+      <p>Pick one workflow that crosses several systems and ends in a decision. A denied claim, a security alert, an access review. Connect the agent to those systems and judge it on the work it shows you. That is a much shorter conversation with your security team than one about moving your data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="eb-section eb-section--alt">
+  <div class="eb-container">
+    <div class="eb-cta reveal">
+      <div class="eb-cta__inner">
+        <h2>Pilot one high-value workflow.</h2>
+        <p>See what an agent does with your systems, with your data staying where it is.</p>
+        <div class="eb-cta__actions">
+          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-calendar"></i> Book a Demo</a>
+          <a href="indicusai.html" class="eb-btn eb-btn--outline-light eb-btn--lg"><i class="fa fa-cogs"></i> See the Platform</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="eb-footer">
+  <div class="eb-container">
+    <div class="eb-footer__grid">
+      <div>
+        <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>EnhanceBiz</a>
+        <p class="eb-footer__about">EnhanceBiz builds IndicusAI, the agentic AI platform that runs agents against your systems while your data stays where it is, and AnnotateMe, our AI-assisted annotation platform.</p>
+        <div class="eb-footer__social">
+          <a href="https://www.linkedin.com/in/enhancebiz-cx-770709415/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:shiwesh@enhancebizcx.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          <a href="company-profile/Profile-Enhance-Biz.pptx" aria-label="Brochure"><i class="fa fa-file-powerpoint-o"></i></a>
+        </div>
+      </div>
+      <div><h4>Platform</h4><div class="eb-footer__links"><a href="indicusai.html">IndicusAI</a><a href="solutions.html">Solutions</a><a href="indicusai.html#custody">No Data Custody</a><a href="indicusai.html#governance">Governance</a><a href="annotateme.html">AnnotateMe</a></div></div>
+      <div><h4>Explore</h4><div class="eb-footer__links"><a href="services.html">Data Services</a><a href="insights.html">Insights</a><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div></div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <ul class="eb-footer__contact" style="margin-bottom:16px;">
+          <li><i class="fa fa-envelope"></i><a href="mailto:shiwesh@enhancebizcx.com">shiwesh@enhancebizcx.com</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:kaushal@enhancebizcx.com">kaushal@enhancebizcx.com</a></li>
+          <li><i class="fa fa-phone"></i><a href="tel:+918757869540">+91 87578 69540</a></li>
+          <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/enhancebiz-cx-770709415/" target="_blank">EnhanceBiz on LinkedIn</a></li>
+        </ul>
+        <form class="eb-newsletter" onsubmit="return false;"><input type="email" placeholder="Your work email" required><button class="eb-btn eb-btn--primary" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="eb-footer__bottom">
+      <div>© 2026 EnhanceBiz. All rights reserved.</div>
+      <div><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/eb-site.js?v=3"></script>
+<script src="js/eb-chatbot.js?v=2"></script>
+</body>
+</html>

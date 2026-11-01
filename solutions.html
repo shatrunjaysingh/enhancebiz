@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solutions — AI Agents at Work | IndicusAI by EnhanceBiz</title>
+  <meta name="description" content="IndicusAI agents for customer assistance, voice campaigns, field service dispatch, security operations, revenue cycle, access reviews and utilities.">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/enhancebiz.css?v=12">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="eb-nav" id="ebNav">
+  <div class="eb-nav__inner">
+    <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>Enhance<span>Biz</span></a>
+    <ul class="eb-menu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="indicusai.html">Platform <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="indicusai.html" class="featured"><i class="fa fa-bolt"></i><span>IndicusAI Overview<span class="dd-sub">Enterprise agents, no data custody</span></span></a>
+          <a href="indicusai.html#custody"><i class="fa fa-eye-slash"></i><span>No Data Custody<span class="dd-sub">Retention you set and can test</span></span></a>
+          <a href="indicusai.html#engine"><i class="fa fa-cogs"></i><span>Cognitive Engine<span class="dd-sub">Plan, execute, verify, remember</span></span></a>
+          <a href="indicusai.html#pipelines"><i class="fa fa-code-fork"></i><span>Agents &amp; Pipelines<span class="dd-sub">Validated control flow</span></span></a>
+          <a href="indicusai.html#governance"><i class="fa fa-shield"></i><span>Governance<span class="dd-sub">Access, approvals, budgets, evals</span></span></a>
+          <a href="indicusai.html#deploy"><i class="fa fa-cloud"></i><span>Deployment<span class="dd-sub">Hosted or in your VPC</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="solutions.html">Solutions <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="solutions.html#assistant"><i class="fa fa-comments"></i><span>Customer Assistant</span></a>
+          <a href="solutions.html#voice"><i class="fa fa-phone"></i><span>Voice Agents</span></a>
+          <a href="solutions.html#dispatch"><i class="fa fa-wrench"></i><span>Smart Dispatch</span></a>
+          <a href="solutions.html#security"><i class="fa fa-shield"></i><span>Security Operations</span></a>
+          <a href="solutions.html#revenue"><i class="fa fa-medkit"></i><span>Revenue Cycle</span></a>
+          <a href="solutions.html#identity"><i class="fa fa-id-badge"></i><span>Identity &amp; Access Reviews</span></a>
+          <a href="solutions.html#utilities"><i class="fa fa-bolt"></i><span>Utilities</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="indicusai.html">Products <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="indicusai.html" class="featured"><i class="fa fa-bolt"></i><span>IndicusAI<span class="dd-sub">Agentic AI platform</span></span></a>
+          <a href="annotateme.html"><i class="fa fa-object-group"></i><span>AnnotateMe<span class="dd-sub">AI-assisted annotation platform</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="services.html">Data Services <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="data-annotations.html"><i class="fa fa-object-group"></i><span>Data Annotation<span class="dd-sub">Image, video, text &amp; 3D labeling</span></span></a>
+          <a href="services.html#aiml"><i class="fa fa-cubes"></i><span>AI &amp; Data Operations<span class="dd-sub">Curation, RLHF, evaluations</span></span></a>
+          <a href="services.html#trust"><i class="fa fa-shield"></i><span>Trust &amp; Safety<span class="dd-sub">Content moderation &amp; review</span></span></a>
+          <a href="services.html#nlp"><i class="fa fa-language"></i><span>NLP &amp; Linguistic<span class="dd-sub">NER, sentiment, transcription</span></span></a>
+          <a href="services.html#cx"><i class="fa fa-headphones"></i><span>Customer Experience<span class="dd-sub">CX, call center, support</span></span></a>
+          <a href="industries.html"><i class="fa fa-industry"></i><span>Industries<span class="dd-sub">Data services by vertical</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="insights.html">Insights <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="insights.html#blog"><i class="fa fa-lightbulb-o"></i><span>Blog</span></a>
+          <a href="insights.html#case-studies"><i class="fa fa-line-chart"></i><span>Case Studies</span></a>
+          <a href="insights.html#white-papers"><i class="fa fa-file-text-o"></i><span>White Papers</span></a>
+          <a href="insights.html#reports"><i class="fa fa-bar-chart"></i><span>Reports &amp; Research</span></a>
+          <a href="insights.html#news"><i class="fa fa-newspaper-o"></i><span>Newsroom</span></a>
+          <a href="insights.html#events"><i class="fa fa-calendar"></i><span>Events</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="about.html">Company <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="about.html"><i class="fa fa-info-circle"></i><span>About Us</span></a>
+          <a href="careers.html"><i class="fa fa-briefcase"></i><span>Careers</span></a>
+          <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </li>
+    </ul>
+    <div class="eb-nav__cta">
+      <button class="eb-burger" id="ebBurger" aria-label="Menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div class="eb-mobile" id="ebMobile">
+  <a href="index.html">Home</a>
+  <div class="grp-label">Platform</div>
+  <div class="sub">
+    <a href="indicusai.html">IndicusAI Overview</a>
+    <a href="indicusai.html#custody">No Data Custody</a>
+    <a href="indicusai.html#engine">Cognitive Engine</a>
+    <a href="indicusai.html#pipelines">Agents &amp; Pipelines</a>
+    <a href="indicusai.html#governance">Governance</a>
+    <a href="indicusai.html#deploy">Deployment</a>
+  </div>
+  <div class="grp-label">Solutions</div>
+  <div class="sub">
+    <a href="solutions.html#assistant">Customer Assistant</a>
+    <a href="solutions.html#voice">Voice Agents</a>
+    <a href="solutions.html#dispatch">Smart Dispatch</a>
+    <a href="solutions.html#security">Security Operations</a>
+    <a href="solutions.html#revenue">Revenue Cycle</a>
+    <a href="solutions.html#identity">Identity &amp; Access Reviews</a>
+    <a href="solutions.html#utilities">Utilities</a>
+  </div>
+  <div class="grp-label">Products</div>
+  <div class="sub">
+    <a href="indicusai.html">IndicusAI</a>
+    <a href="annotateme.html">AnnotateMe</a>
+  </div>
+  <div class="grp-label">Data Services</div>
+  <div class="sub">
+    <a href="data-annotations.html">Data Annotation</a>
+    <a href="services.html#aiml">AI &amp; Data Operations</a>
+    <a href="services.html#trust">Trust &amp; Safety</a>
+    <a href="services.html#nlp">NLP &amp; Linguistic</a>
+    <a href="services.html#cx">Customer Experience</a>
+    <a href="industries.html">Industries</a>
+  </div>
+  <div class="grp-label">Insights</div>
+  <div class="sub">
+    <a href="insights.html#blog">Blog</a>
+    <a href="insights.html#case-studies">Case Studies</a>
+    <a href="insights.html#white-papers">White Papers</a>
+    <a href="insights.html#reports">Reports &amp; Research</a>
+    <a href="insights.html#news">Newsroom</a>
+    <a href="insights.html#events">Events</a>
+  </div>
+  <div class="grp-label">Company</div>
+  <div class="sub">
+    <a href="about.html">About Us</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="eb-btn eb-btn--primary">Book a Demo</a>
+</div>
+
+<header class="eb-pagehead">
+  <div class="eb-container">
+    <div class="eb-crumb"><a href="index.html">Home</a><span class="sep">/</span>Solutions</div>
+    <h1>Agents that do <span class="accent">real work</span></h1>
+    <p>Each solution is built on the same IndicusAI platform. Each one reads your systems, reaches a conclusion you can check, and knows when the right answer is to stop or hand over to a person.</p>
+  </div>
+</header>
+
+<section class="eb-section">
+  <div class="eb-container">
+
+    <div class="eb-solution reveal" id="assistant">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-comments"></i> Customer Assistant</span>
+        <h2>Answers from your own systems, on every channel</h2>
+        <p>Customers ask about a bill, order, booking or request. The assistant checks who is asking, fetches that one customer's record live from your system, and answers in their language, on your website or app, WhatsApp, SMS, email or a phone call.</p>
+        <div class="eb-prose"><ul class="bullets">
+          <li><strong>Only the right customer.</strong> Signed in, their own number, a one-time code or a detail on the record. You choose how sure it must be for each question.</li>
+          <li><strong>Only what you allow.</strong> You choose the fields it may see: the amount and due date, not the address or history.</li>
+          <li><strong>Nothing copied.</strong> Answers are fetched live. We log that a lookup happened, not what it returned.</li>
+        </ul></div>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-road"></i>Live in about two weeks</h3>
+        <p><strong>Days 1–2:</strong> access to your API, your FAQ and your WhatsApp number.</p>
+        <p><strong>Days 3–5:</strong> connect, set protections, test with test customers.</p>
+        <p><strong>Days 6–10:</strong> pilot with your team.</p>
+        <p style="margin-bottom:0;"><strong>Day 10 onward:</strong> live, with your team able to take over any conversation and hand it back.</p>
+      </div>
+    </div>
+
+    <div class="eb-solution reveal" id="voice">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-phone"></i> Voice Agents</span>
+        <h2>Outbound calling with the rules built in</h2>
+        <p>Run announcement and conversational campaigns from a CSV or from an agent's own results, in Hindi, English and other Indian languages. Conversations follow a skill or question set you control, and every call feeds your reports.</p>
+        <div class="eb-prose"><ul class="bullets">
+          <li><strong>Quiet hours as a ceiling.</strong> A campaign cannot widen them.</li>
+          <li><strong>Do-not-call checks at dial time,</strong> not just at upload.</li>
+          <li><strong>Per-number evidence export</strong> for every campaign.</li>
+        </ul></div>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-balance-scale"></i>Why it matters</h3>
+        <p style="margin-bottom:0;">Calling Indian consumers is regulated under TRAI rules. In IndicusAI, the rules that a user could otherwise override are enforced by the platform itself.</p>
+      </div>
+    </div>
+
+    <div class="eb-solution reveal" id="dispatch">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-wrench"></i> Smart Dispatch</span>
+        <h2>From complaint to technician, without a dispatcher chasing phones</h2>
+        <p>A customer reports a problem on WhatsApp or by phone. The system captures location and asset, checks warranty against your registry, and rings the nearest free technician. A rejection or silence moves to the next nearest automatically.</p>
+        <div class="eb-prose"><ul class="bullets">
+          <li><strong>SLA watch.</strong> Technicians who are off course close to the deadline raise a red flag for supervisors.</li>
+          <li><strong>The full loop.</strong> Live tracking and an OTP for the customer, a job page and app for the technician, plus billing, inventory and reports.</li>
+          <li><strong>National coverage.</strong> Every Indian pincode known, with service partners, dealer counters and freelancers.</li>
+        </ul></div>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-sliders"></i>Configuration, not code</h3>
+        <p style="margin-bottom:0;">Built for any business that sends technicians to customers. A new client's hours, escalation rules, registry and WhatsApp number are settings.</p>
+      </div>
+    </div>
+
+    <div class="eb-solution reveal" id="security">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-shield"></i> Security Operations</span>
+        <h2>Two alerts. One rule. Opposite conclusions.</h2>
+        <p>The rule name tells you little. The context tells you everything. A four-agent pipeline triages each alert, enriches it with reputation, asset and identity data, then either contains the incident or tunes the detection that misfired.</p>
+        <div class="eb-prose"><ul class="bullets">
+          <li><strong>Deliberately asymmetric.</strong> Anything not proven benign goes to containment.</li>
+          <li><strong>Fixes the cause.</strong> A false positive ends with a proposed rule change, so it doesn't come back next week.</li>
+        </ul></div>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-play-circle"></i>Demo scenario</h3>
+        <p>Both alerts fire "Encoded PowerShell spawned by Office process" at high severity. One is Word on a finance user's laptop sending 8.8 MB to an external address. The other is a signed management agent sending 2.2 KB internally.</p>
+        <small>Demonstration on stand-in data.</small>
+      </div>
+    </div>
+
+    <div class="eb-solution reveal" id="revenue">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-medkit"></i> Revenue Cycle</span>
+        <h2>A denial is a deadline nobody is watching</h2>
+        <p>Winning the appeal is rarely the hard part. Knowing which appeal is worth filing before the window closes is. The agent reads the claim and remittance, checks eligibility without being asked, and counts the clock.</p>
+        <div class="eb-prose"><ul class="bullets">
+          <li><strong>A decision, not a score,</strong> with the evidence and the deadline.</li>
+          <li><strong>It declines.</strong> When the payer is right, it says to bill the patient and explains why in plain words.</li>
+        </ul></div>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-play-circle"></i>Demo scenario</h3>
+        <p>A $1,240 crown denied for missing prior authorization. The agent finds a twelve-month waiting period that would sink the appeal anyway, recommends billing the patient, and flags 13 days left on the window. 38 seconds, 6.6 cents.</p>
+        <small>Demonstration on stand-in dental billing data.</small>
+      </div>
+    </div>
+
+    <div class="eb-solution reveal" id="identity">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-id-badge"></i> Identity &amp; Access Reviews</span>
+        <h2>Certification cycles without the spreadsheet chase</h2>
+        <p>Chasing owners, emailing reviewers, exporting and comparing lists: agents run the cycle end to end. Your people spend their time on the exceptions it flags rather than on assembling the information needed to find them.</p>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-play-circle"></i>Demo scenario</h3>
+        <p>A full cycle completed in about five minutes for under a dollar, and surfaced seven categories of finding, including access that had been formally revoked and quietly restored.</p>
+        <small>Demonstration in a simulated environment.</small>
+      </div>
+    </div>
+
+    <div class="eb-solution reveal" id="utilities">
+      <div>
+        <span class="eb-eyebrow"><i class="fa fa-bolt"></i> Utilities</span>
+        <h2>Revenue protection for power distribution</h2>
+        <p>A set of agents for electricity distribution companies, working from individual accounts up to the whole book. Each one is tested against the plausible wrong answer as well as the obvious right one.</p>
+      </div>
+      <div class="eb-solution__scene">
+        <h3><i class="fa fa-lightbulb-o"></i>Your workflow next?</h3>
+        <p>Skills, tools and pipelines are the same whatever the industry. If the work spans several systems and ends in a decision, it is probably a fit.</p>
+        <a href="contact.html" class="eb-link-arrow">Tell us about it <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="eb-section eb-section--alt">
+  <div class="eb-container">
+    <div class="eb-cta reveal">
+      <div class="eb-cta__inner">
+        <h2>Pilot one high-value workflow.</h2>
+        <p>We'll scope it against your systems and show you the results before you commit to more.</p>
+        <div class="eb-cta__actions">
+          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-calendar"></i> Book a Demo</a>
+          <a href="indicusai.html" class="eb-btn eb-btn--outline-light eb-btn--lg"><i class="fa fa-cogs"></i> See the Platform</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="eb-footer">
+  <div class="eb-container">
+    <div class="eb-footer__grid">
+      <div>
+        <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>EnhanceBiz</a>
+        <p class="eb-footer__about">EnhanceBiz builds IndicusAI, the agentic AI platform that runs agents against your systems while your data stays where it is, and AnnotateMe, our AI-assisted annotation platform.</p>
+        <div class="eb-footer__social">
+          <a href="https://www.linkedin.com/in/enhancebiz-cx-770709415/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:shiwesh@enhancebizcx.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          <a href="company-profile/Profile-Enhance-Biz.pptx" aria-label="Brochure"><i class="fa fa-file-powerpoint-o"></i></a>
+        </div>
+      </div>
+      <div><h4>Platform</h4><div class="eb-footer__links"><a href="indicusai.html">IndicusAI</a><a href="solutions.html">Solutions</a><a href="indicusai.html#custody">No Data Custody</a><a href="indicusai.html#governance">Governance</a><a href="annotateme.html">AnnotateMe</a></div></div>
+      <div><h4>Explore</h4><div class="eb-footer__links"><a href="services.html">Data Services</a><a href="insights.html">Insights</a><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div></div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <ul class="eb-footer__contact" style="margin-bottom:16px;">
+          <li><i class="fa fa-envelope"></i><a href="mailto:shiwesh@enhancebizcx.com">shiwesh@enhancebizcx.com</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:kaushal@enhancebizcx.com">kaushal@enhancebizcx.com</a></li>
+          <li><i class="fa fa-phone"></i><a href="tel:+918757869540">+91 87578 69540</a></li>
+          <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/enhancebiz-cx-770709415/" target="_blank">EnhanceBiz on LinkedIn</a></li>
+        </ul>
+        <form class="eb-newsletter" onsubmit="return false;"><input type="email" placeholder="Your work email" required><button class="eb-btn eb-btn--primary" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="eb-footer__bottom">
+      <div>© 2026 EnhanceBiz. All rights reserved.</div>
+      <div><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/eb-site.js?v=3"></script>
+<script src="js/eb-chatbot.js?v=2"></script>
+</body>
+</html>

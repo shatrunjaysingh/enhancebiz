@@ -14,15 +14,31 @@
   'use strict';
 
   // -------- Knowledge base (also usable as LLM system context) --------
-  var EB_KNOWLEDGE = 'EnhanceBiz provides human-curated data services for AI: data annotation (image, video, text, 3D LiDAR), NLP & linguistic services, AI/ML dataset support (curation, augmentation, RLHF, validation), and BPO/customer support. Its flagship product is AnnotateMe, an AI-assisted annotation platform.';
+  var EB_KNOWLEDGE = 'EnhanceBiz builds IndicusAI, an agentic AI platform that runs agents against customer systems through MCP and APIs with no data ingestion, metadata-only retention, and hosted or VPC deployment. Its other product is AnnotateMe, an AI-assisted annotation platform. It also provides data services: annotation, NLP, AI/ML datasets, trust and safety, and customer experience.';
 
   var KB = [
     {
-      keys: ['hello', 'hi', 'hey', 'greetings', 'good morning', 'good afternoon'],
-      answer: "Hi there! 👋 I'm the EnhanceBiz assistant. I can tell you about our <strong>data annotation</strong>, <strong>NLP</strong>, <strong>AI/ML dataset</strong> and <strong>BPO</strong> services — or our platform, <strong>AnnotateMe</strong>. What would you like to know?"
+      keys: ['indicus', 'agent', 'agentic', 'platform', 'product', 'skill', 'pipeline', 'mcp'],
+      answer: "<strong>IndicusAI</strong> is our agentic AI platform. It runs agents against your systems while your data stays where it is:<ul><li>Author versioned skills and compose agents</li><li>A cognitive engine that plans, executes and verifies with a separate critic</li><li>Connects through MCP or your existing APIs</li><li>Validated pipelines, approvals, budgets and evals</li><li>Hosted or in your VPC</li></ul>See the <a href='indicusai.html'>IndicusAI page</a> or <a href='contact.html'>book a demo</a>."
     },
     {
-      keys: ['annotateme', 'annotate me', 'platform', 'product', 'tool', 'software'],
+      keys: ['custody', 'ingest', 'retention', 'my data', 'our data', 'data stay', 'data leave', 'vpc', 'residency', 'on-prem'],
+      answer: "IndicusAI doesn't ingest your records. Agents read the source system when they need an answer, with your credentials. In <strong>metadata mode</strong>, prompts and tool results aren't written to our database. To keep inference inside your cloud too, route models through Bedrock or Vertex, or run in your VPC. More on <a href='indicusai.html#custody'>no data custody</a>."
+    },
+    {
+      keys: ['which model', 'what model', 'models', 'bedrock', 'vertex', 'openai', 'anthropic', 'gemini', 'llm'],
+      answer: "IndicusAI works with <strong>Anthropic, OpenAI and Google</strong> directly, or through <strong>Amazon Bedrock and Google Vertex</strong> in your own cloud. Each agent sets its own model."
+    },
+    {
+      keys: ['use case', 'solution', 'voice', 'whatsapp', 'assistant', 'dispatch', 'technician', 'soc', 'claims', 'revenue cycle', 'access review', 'utility'],
+      answer: "IndicusAI runs a <strong>customer assistant</strong>, <strong>voice agents</strong>, <strong>smart dispatch</strong> for field service, <strong>security operations</strong>, <strong>revenue cycle</strong>, <strong>access reviews</strong> and <strong>utilities</strong> agents. See <a href='solutions.html'>Solutions</a>."
+    },
+    {
+      keys: ['hello', 'hi', 'hey', 'greetings', 'good morning', 'good afternoon'],
+      answer: "Hi there! 👋 I'm the EnhanceBiz assistant. I can tell you about <strong>IndicusAI</strong>, our agentic AI platform, or <strong>AnnotateMe</strong> and our <strong>data services</strong>. What would you like to know?"
+    },
+    {
+      keys: ['annotateme', 'annotate me', 'labeling tool', 'annotation tool', 'annotation platform'],
       answer: "<strong>AnnotateMe</strong> is our AI-assisted annotation platform. Highlights:<ul><li>YOLOv8 AI auto-annotation (single frame or batch)</li><li>Real-time multi-annotator collaboration</li><li>3-stage quality review workflow</li><li>Image, video, text &amp; 3D point-cloud support</li><li>Export to 9+ formats (COCO, YOLO, VOC, TFRecord…)</li><li>Multi-tenant, self-hosted or managed</li></ul>See the full <a href='annotateme.html'>AnnotateMe page</a> or <a href='contact.html'>request a demo</a>."
     },
     {
@@ -51,15 +67,15 @@
     },
     {
       keys: ['security', 'compliance', 'privacy', 'gdpr', 'data protection', 'secure', 'audit'],
-      answer: "Security is built in: <strong>tenant-isolated storage</strong>, role-based access, JWT auth, HMAC-signed webhooks, and an <strong>immutable audit trail</strong> on every change. Happy to discuss your specific compliance needs — <a href='contact.html'>contact us</a>."
+      answer: "IndicusAI gives you <strong>metadata-only retention</strong>, role-based access, <strong>SSO and SCIM</strong>, approvals, enforced budgets and a full run record. Happy to discuss your specific compliance needs — <a href='contact.html'>contact us</a>."
     },
     {
       keys: ['price', 'pricing', 'cost', 'quote', 'how much', 'budget', 'rate'],
-      answer: "Pricing depends on data type, volume, and whether you want a <strong>managed service</strong> or a <strong>self-hosted AnnotateMe</strong> deployment. Tell us about your project and we'll prepare a tailored quote — <a href='contact.html'>request a quote</a>."
+      answer: "Pricing depends on scope and which product or service you need and how you want it deployed. Tell us about your project and we'll prepare a tailored quote — <a href='contact.html'>request a quote</a>."
     },
     {
       keys: ['demo', 'trial', 'try', 'get started', 'start', 'onboard'],
-      answer: "Great! You can <a href='contact.html'>request a demo or consultation here</a>. Share your dataset size, data type, and goals, and our team will reach out within one business day."
+      answer: "Great! You can <a href='contact.html'>request a demo or consultation here</a>. Share the workflow you have in mind, and our team will reach out within one business day."
     },
     {
       keys: ['contact', 'email', 'phone', 'reach', 'talk to', 'sales', 'call you'],
@@ -67,27 +83,28 @@
     },
     {
       keys: ['career', 'job', 'hiring', 'work', 'apply', 'vacancy', 'employment'],
-      answer: "We're always looking for great annotators, linguists, and engineers. Check open roles on our <a href='careers.html'>Careers page</a>."
+      answer: "We're always looking for great engineers, linguists and annotators. Check open roles on our <a href='careers.html'>Careers page</a>."
     },
     {
       keys: ['about', 'who are you', 'company', 'enhancebiz'],
-      answer: "<strong>EnhanceBiz</strong> powers AI with high-quality, human-curated data — combining annotation, NLP, and AI/ML dataset services with our own AnnotateMe platform and a BPO heritage. Learn more on our <a href='about.html'>About page</a>."
+      answer: "<strong>EnhanceBiz</strong> builds <strong>IndicusAI</strong>, our agentic AI platform, and <strong>AnnotateMe</strong>, backed by data services and an operations heritage. Learn more on our <a href='about.html'>About page</a>."
     },
     {
       keys: ['thank', 'thanks', 'cheers', 'appreciate'],
-      answer: "You're welcome! 🙌 Anything else I can help you with about our services or AnnotateMe?"
+      answer: "You're welcome! 🙌 Anything else I can help you with about IndicusAI, AnnotateMe or our services?"
     }
   ];
 
   var CHIPS = [
-    { label: 'What is AnnotateMe?', q: 'Tell me about AnnotateMe' },
-    { label: 'Annotation services', q: 'What annotation services do you offer?' },
-    { label: 'Export formats', q: 'What export formats are supported?' },
+    { label: 'What is IndicusAI?', q: 'Tell me about IndicusAI' },
+    { label: 'Does my data stay put?', q: 'What about data custody and retention?' },
+    { label: 'Solutions', q: 'What solutions and use cases do you have?' },
+    { label: 'AnnotateMe', q: 'Tell me about AnnotateMe' },
     { label: 'Request a demo', q: 'I want a demo' },
     { label: 'Pricing', q: 'How does pricing work?' }
   ];
 
-  var FALLBACK = "I'm not certain about that one, but our team can definitely help. You can <a href='contact.html'>reach out here</a> or ask me about <strong>annotation</strong>, <strong>NLP</strong>, <strong>AI/ML datasets</strong>, <strong>BPO</strong>, or <strong>AnnotateMe</strong>.";
+  var FALLBACK = "I'm not certain about that one, but our team can definitely help. You can <a href='contact.html'>reach out here</a> or ask me about <strong>IndicusAI</strong>, <strong>AnnotateMe</strong>, or our <strong>data services</strong>.";
 
   // -------- Local keyword matcher --------
   function findAnswer(text) {
@@ -122,7 +139,7 @@
       '</div>' +
       '<div class="ebc-body" id="ebcBody"></div>' +
       '<div class="ebc-chips" id="ebcChips"></div>' +
-      '<div class="ebc-input"><input id="ebcInput" type="text" placeholder="Ask about our services or AnnotateMe…" autocomplete="off"><button id="ebcSend" aria-label="Send"><i class="fa fa-paper-plane"></i></button></div>' +
+      '<div class="ebc-input"><input id="ebcInput" type="text" placeholder="Ask about IndicusAI, AnnotateMe or our services…" autocomplete="off"><button id="ebcSend" aria-label="Send"><i class="fa fa-paper-plane"></i></button></div>' +
       '<div class="ebc-foot">Powered by EnhanceBiz · <a href="contact.html" style="color:inherit;text-decoration:underline;">talk to a human</a></div>' +
     '</div>'
   );
