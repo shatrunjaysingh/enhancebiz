@@ -1,11 +1,11 @@
 # EnhanceBiz
 
-Marketing website for **EnhanceBiz** — human-in-the-loop data services for AI:
-data annotation, AI & data operations, trust & safety, NLP & linguistic services,
-and customer experience — plus **AnnotateMe**, our AI-assisted annotation platform.
+Marketing website for **EnhanceBiz**, focused on **IndicusAI**, our agentic AI
+platform. It also covers **AnnotateMe**, our AI-assisted annotation platform, and
+our data services.
 
 ## Structure
-- `index.html`, `services.html`, `industries.html`, `data-annotations.html`,
+- `index.html`, `indicusai.html`, `solutions.html`, `services.html`, `industries.html`, `data-annotations.html`,
   `annotateme.html`, `insights.html`, `about.html`, `careers.html`, `contact.html`
 - `css/enhancebiz.css` — design system (Poppins/DM Sans, blue→indigo theme)
 - `js/eb-site.js` — nav, mobile menu, scroll reveal

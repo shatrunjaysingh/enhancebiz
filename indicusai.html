@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IndicusAI Platform — Agents, Pipelines &amp; Governance | EnhanceBiz</title>
+  <meta name="description" content="IndicusAI: author skills, compose agents and pipelines, and deploy them against your systems with no data custody. Critic verification, governance, hosted or VPC.">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/enhancebiz.css?v=12">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="eb-nav" id="ebNav">
+  <div class="eb-nav__inner">
+    <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>Enhance<span>Biz</span></a>
+    <ul class="eb-menu">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="indicusai.html">Platform <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="indicusai.html" class="featured"><i class="fa fa-bolt"></i><span>IndicusAI Overview<span class="dd-sub">Enterprise agents, no data custody</span></span></a>
+          <a href="indicusai.html#custody"><i class="fa fa-eye-slash"></i><span>No Data Custody<span class="dd-sub">Retention you set and can test</span></span></a>
+          <a href="indicusai.html#engine"><i class="fa fa-cogs"></i><span>Cognitive Engine<span class="dd-sub">Plan, execute, verify, remember</span></span></a>
+          <a href="indicusai.html#pipelines"><i class="fa fa-code-fork"></i><span>Agents &amp; Pipelines<span class="dd-sub">Validated control flow</span></span></a>
+          <a href="indicusai.html#governance"><i class="fa fa-shield"></i><span>Governance<span class="dd-sub">Access, approvals, budgets, evals</span></span></a>
+          <a href="indicusai.html#deploy"><i class="fa fa-cloud"></i><span>Deployment<span class="dd-sub">Hosted or in your VPC</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="solutions.html">Solutions <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="solutions.html#assistant"><i class="fa fa-comments"></i><span>Customer Assistant</span></a>
+          <a href="solutions.html#voice"><i class="fa fa-phone"></i><span>Voice Agents</span></a>
+          <a href="solutions.html#dispatch"><i class="fa fa-wrench"></i><span>Smart Dispatch</span></a>
+          <a href="solutions.html#security"><i class="fa fa-shield"></i><span>Security Operations</span></a>
+          <a href="solutions.html#revenue"><i class="fa fa-medkit"></i><span>Revenue Cycle</span></a>
+          <a href="solutions.html#identity"><i class="fa fa-id-badge"></i><span>Identity &amp; Access Reviews</span></a>
+          <a href="solutions.html#utilities"><i class="fa fa-bolt"></i><span>Utilities</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="indicusai.html">Products <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="indicusai.html" class="featured"><i class="fa fa-bolt"></i><span>IndicusAI<span class="dd-sub">Agentic AI platform</span></span></a>
+          <a href="annotateme.html"><i class="fa fa-object-group"></i><span>AnnotateMe<span class="dd-sub">AI-assisted annotation platform</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="services.html">Data Services <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="data-annotations.html"><i class="fa fa-object-group"></i><span>Data Annotation<span class="dd-sub">Image, video, text &amp; 3D labeling</span></span></a>
+          <a href="services.html#aiml"><i class="fa fa-cubes"></i><span>AI &amp; Data Operations<span class="dd-sub">Curation, RLHF, evaluations</span></span></a>
+          <a href="services.html#trust"><i class="fa fa-shield"></i><span>Trust &amp; Safety<span class="dd-sub">Content moderation &amp; review</span></span></a>
+          <a href="services.html#nlp"><i class="fa fa-language"></i><span>NLP &amp; Linguistic<span class="dd-sub">NER, sentiment, transcription</span></span></a>
+          <a href="services.html#cx"><i class="fa fa-headphones"></i><span>Customer Experience<span class="dd-sub">CX, call center, support</span></span></a>
+          <a href="industries.html"><i class="fa fa-industry"></i><span>Industries<span class="dd-sub">Data services by vertical</span></span></a>
+        </div>
+      </li>
+      <li>
+        <a href="insights.html">Insights <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="insights.html#blog"><i class="fa fa-lightbulb-o"></i><span>Blog</span></a>
+          <a href="insights.html#case-studies"><i class="fa fa-line-chart"></i><span>Case Studies</span></a>
+          <a href="insights.html#white-papers"><i class="fa fa-file-text-o"></i><span>White Papers</span></a>
+          <a href="insights.html#reports"><i class="fa fa-bar-chart"></i><span>Reports &amp; Research</span></a>
+          <a href="insights.html#news"><i class="fa fa-newspaper-o"></i><span>Newsroom</span></a>
+          <a href="insights.html#events"><i class="fa fa-calendar"></i><span>Events</span></a>
+        </div>
+      </li>
+      <li>
+        <a href="about.html">Company <i class="fa fa-angle-down caret"></i></a>
+        <div class="eb-dropdown">
+          <a href="about.html"><i class="fa fa-info-circle"></i><span>About Us</span></a>
+          <a href="careers.html"><i class="fa fa-briefcase"></i><span>Careers</span></a>
+          <a href="contact.html"><i class="fa fa-envelope"></i><span>Contact</span></a>
+        </div>
+      </li>
+    </ul>
+    <div class="eb-nav__cta">
+      <button class="eb-burger" id="ebBurger" aria-label="Menu"><i class="fa fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+<div class="eb-mobile" id="ebMobile">
+  <a href="index.html">Home</a>
+  <div class="grp-label">Platform</div>
+  <div class="sub">
+    <a href="indicusai.html">IndicusAI Overview</a>
+    <a href="indicusai.html#custody">No Data Custody</a>
+    <a href="indicusai.html#engine">Cognitive Engine</a>
+    <a href="indicusai.html#pipelines">Agents &amp; Pipelines</a>
+    <a href="indicusai.html#governance">Governance</a>
+    <a href="indicusai.html#deploy">Deployment</a>
+  </div>
+  <div class="grp-label">Solutions</div>
+  <div class="sub">
+    <a href="solutions.html#assistant">Customer Assistant</a>
+    <a href="solutions.html#voice">Voice Agents</a>
+    <a href="solutions.html#dispatch">Smart Dispatch</a>
+    <a href="solutions.html#security">Security Operations</a>
+    <a href="solutions.html#revenue">Revenue Cycle</a>
+    <a href="solutions.html#identity">Identity &amp; Access Reviews</a>
+    <a href="solutions.html#utilities">Utilities</a>
+  </div>
+  <div class="grp-label">Products</div>
+  <div class="sub">
+    <a href="indicusai.html">IndicusAI</a>
+    <a href="annotateme.html">AnnotateMe</a>
+  </div>
+  <div class="grp-label">Data Services</div>
+  <div class="sub">
+    <a href="data-annotations.html">Data Annotation</a>
+    <a href="services.html#aiml">AI &amp; Data Operations</a>
+    <a href="services.html#trust">Trust &amp; Safety</a>
+    <a href="services.html#nlp">NLP &amp; Linguistic</a>
+    <a href="services.html#cx">Customer Experience</a>
+    <a href="industries.html">Industries</a>
+  </div>
+  <div class="grp-label">Insights</div>
+  <div class="sub">
+    <a href="insights.html#blog">Blog</a>
+    <a href="insights.html#case-studies">Case Studies</a>
+    <a href="insights.html#white-papers">White Papers</a>
+    <a href="insights.html#reports">Reports &amp; Research</a>
+    <a href="insights.html#news">Newsroom</a>
+    <a href="insights.html#events">Events</a>
+  </div>
+  <div class="grp-label">Company</div>
+  <div class="sub">
+    <a href="about.html">About Us</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html" class="eb-btn eb-btn--primary">Book a Demo</a>
+</div>
+
+<header class="eb-pagehead">
+  <div class="eb-container">
+    <div class="eb-crumb"><a href="index.html">Home</a><span class="sep">/</span>Platform</div>
+    <h1>Enterprise AI agents, <span class="accent">without data custody</span></h1>
+    <p>IndicusAI is a multi-tenant platform for authoring skills, composing them into agents and pipelines, and deploying them against the systems you already run, on a cognitive engine that plans, routes, executes, critiques and remembers.</p>
+    <div class="eb-hero__actions" style="margin-top:28px;">
+      <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-calendar"></i> Book a Demo</a>
+      <a href="solutions.html" class="eb-btn eb-btn--ghost eb-btn--lg"><i class="fa fa-th-large"></i> See Solutions</a>
+    </div>
+  </div>
+</header>
+
+<!-- CUSTODY -->
+<section class="eb-section" id="custody">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">No Data Custody</span>
+      <h2 class="eb-h2 reveal d1">The agent is a visitor, <span class="accent">not a warehouse</span></h2>
+      <p class="eb-lead reveal d2">The agent reaches into the source system only when it needs an answer. Your systems remain the system of record, and your credentials remain the authorization boundary.</p>
+    </div>
+    <div class="eb-grid eb-grid--3">
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-eye-slash"></i></div><h3>Retention you set</h3><p>In metadata mode, no prompts or tool results are stored by us. Memory and resume use your own bucket. Cost, latency and outcome are still recorded.</p></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-flask"></i></div><h3>Tested, not promised</h3><p>A claim about what isn't stored can only be proven by looking. Our test suite reads the database back and asserts the absence.</p></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-pencil-square-o"></i></div><h3>One write path</h3><p>Every content write passes through one auditable place. That is why we built the engine ourselves instead of on an agent framework.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINE -->
+<section class="eb-section eb-section--dark" id="engine">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Cognitive Engine</span>
+      <h2 class="eb-h2 reveal d1">Reason in a loop, <span class="accent">then verify</span></h2>
+      <p class="eb-lead reveal d2">Progressive disclosure keeps context focused: only a skill's description is always in context, and its body loads when selected. Breadth stays affordable.</p>
+    </div>
+    <div class="eb-loop">
+      <div class="eb-loop__step reveal"><i class="fa fa-history"></i><h3>Recall</h3><p>Bring back what earlier runs learned.</p></div>
+      <div class="eb-loop__step reveal d1"><i class="fa fa-list-ol"></i><h3>Plan</h3><p>Break the goal into checkable steps.</p></div>
+      <div class="eb-loop__step reveal d2"><i class="fa fa-random"></i><h3>Route</h3><p>Select only the skills the next step needs.</p></div>
+      <div class="eb-loop__step reveal d3"><i class="fa fa-play"></i><h3>Execute</h3><p>Call tools inside budget and permission limits.</p></div>
+      <div class="eb-loop__step reveal d3"><i class="fa fa-check-square-o"></i><h3>Verify</h3><p>A critic tests the result in a fresh context.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INDICUS AGENT -->
+<section class="eb-section" id="indicus-agent">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">The Indicus Agent</span>
+      <h2 class="eb-h2 reveal d1">One agent, built to <span class="accent">check its own work</span></h2>
+      <p class="eb-lead reveal d2">The Indicus agent plans the work, verifies the result and remembers what it learned.</p>
+    </div>
+    <div class="eb-grid eb-grid--3">
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-sitemap"></i></div><h3>Plans</h3><p>Breaks a goal into steps and works through them with the skills and tools you gave it.</p></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-check-square-o"></i></div><h3>Verifies</h3><p>A critic reviews the work in a fresh context before the agent gives its conclusion.</p></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-repeat"></i></div><h3>Remembers</h3><p>Persistent recall across runs, and the ability to resume long-running work from a checkpoint.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILD -->
+<section class="eb-section eb-section--alt" id="build">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Composition</span>
+      <h2 class="eb-h2 reveal d1">Build agents from <span class="accent">versioned, isolated parts</span></h2>
+      <p class="eb-lead reveal d2">Change one piece without rebuilding the whole agent.</p>
+    </div>
+    <div class="eb-grid eb-grid--4">
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-book"></i></div><h3>Skills</h3><p>Immutable, semver-versioned instructions, written with an assistant and tested in a playground.</p></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-wrench"></i></div><h3>Tools</h3><p>Built-in tools plus custom tools imported from your OpenAPI specs. Skill code is sandboxed.</p></div>
+      <div class="eb-card reveal d2"><div class="eb-card__icon"><i class="fa fa-plug"></i></div><h3>Connectors</h3><p>MCP servers with OAuth, scoped per workspace, including systems behind your firewall.</p></div>
+      <div class="eb-card reveal d3"><div class="eb-card__icon"><i class="fa fa-microchip"></i></div><h3>Models</h3><p>Anthropic, OpenAI or Google directly, or through Bedrock and Vertex. Set per agent.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PIPELINES -->
+<section class="eb-section" id="pipelines">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:48px;">
+      <span class="eb-eyebrow reveal">Pipelines</span>
+      <h2 class="eb-h2 reveal d1">Author the control flow. <span class="accent">Validate it before it saves.</span></h2>
+      <p class="eb-lead reveal d2">Deterministic orchestration is a first-class artifact, not an afterthought around an agent. Each agent owns one skill, and branches read the verdicts agents write.</p>
+    </div>
+    <div class="eb-flow reveal">
+      <div class="eb-flow__node"><i class="fa fa-flag"></i>Trigger</div><i class="fa fa-long-arrow-right eb-flow__arrow"></i>
+      <div class="eb-flow__node"><i class="fa fa-user-circle-o"></i>Agent</div><i class="fa fa-long-arrow-right eb-flow__arrow"></i>
+      <div class="eb-flow__node"><i class="fa fa-code-fork"></i>Branch</div><i class="fa fa-long-arrow-right eb-flow__arrow"></i>
+      <div class="eb-flow__node"><i class="fa fa-wrench"></i>Tool</div><i class="fa fa-long-arrow-right eb-flow__arrow"></i>
+      <div class="eb-flow__node"><i class="fa fa-check-square-o"></i>Verify</div>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="eb-section eb-section--alt" id="channels">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Channels</span>
+      <h2 class="eb-h2 reveal d1">Meet people <span class="accent">where they already are</span></h2>
+    </div>
+    <div class="eb-grid eb-grid--4">
+      <div class="eb-why reveal"><div class="eb-why__icon"><i class="fa fa-comments-o"></i></div><h3>Chat</h3><p>On your website or app, with a full cognitive trace for your team.</p></div>
+      <div class="eb-why reveal d1"><div class="eb-why__icon"><i class="fa fa-whatsapp"></i></div><h3>WhatsApp</h3><p>On your own number, through Meta's WhatsApp Cloud API.</p></div>
+      <div class="eb-why reveal d2"><div class="eb-why__icon"><i class="fa fa-phone"></i></div><h3>Voice</h3><p>Campaigns and conversations over your carrier, in Indian languages.</p></div>
+      <div class="eb-why reveal d3"><div class="eb-why__icon"><i class="fa fa-envelope-o"></i></div><h3>SMS &amp; Email</h3><p>Notifications and replies with opt-out handling built in.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GOVERNANCE -->
+<section class="eb-section" id="governance">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Governance</span>
+      <h2 class="eb-h2 reveal d1">Control that holds up <span class="accent">under audit</span></h2>
+    </div>
+    <div class="eb-grid eb-grid--3">
+      <div class="eb-trust-item reveal"><i class="fa fa-users"></i><div><h3>Tenancy &amp; roles</h3><p>Organizations, workspaces and role-based access, with credentials and spend scoped per workspace.</p></div></div>
+      <div class="eb-trust-item reveal d1"><i class="fa fa-key"></i><div><h3>SSO &amp; SCIM</h3><p>Federate with your identity provider, and revoke access when someone is deprovisioned.</p></div></div>
+      <div class="eb-trust-item reveal d2"><i class="fa fa-history"></i><div><h3>Audit trail</h3><p>Who did what, when, with every plan, tool call and verdict visible on the run.</p></div></div>
+      <div class="eb-trust-item reveal"><i class="fa fa-hand-paper-o"></i><div><h3>Approvals</h3><p>Human-in-the-loop checkpoints that pause a run until someone decides.</p></div></div>
+      <div class="eb-trust-item reveal d1"><i class="fa fa-tachometer"></i><div><h3>Budgets</h3><p>Cost ceilings, token budgets, step limits and wall-clock limits, all enforced during the run.</p></div></div>
+      <div class="eb-trust-item reveal d2"><i class="fa fa-flask"></i><div><h3>Evals</h3><p>Score agents against known cases, so a change is measured before it reaches users.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOY -->
+<section class="eb-section eb-section--alt" id="deploy">
+  <div class="eb-container">
+    <div class="eb-center eb-narrow" style="margin-bottom:56px;">
+      <span class="eb-eyebrow reveal">Deployment</span>
+      <h2 class="eb-h2 reveal d1">Start hosted. <span class="accent">Or run it in your VPC.</span></h2>
+    </div>
+    <div class="eb-grid eb-grid--2">
+      <div class="eb-card reveal"><div class="eb-card__icon"><i class="fa fa-cloud"></i></div><h3>Hosted</h3><p>The fastest path to production, with retention set so no prompts or tool results are kept.</p></div>
+      <div class="eb-card reveal d1"><div class="eb-card__icon"><i class="fa fa-lock"></i></div><h3>Your cloud</h3><p>The same containers on your Postgres and your S3, with your Bedrock or Vertex endpoint, so inference stays in your account.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="eb-section">
+  <div class="eb-container">
+    <div class="eb-cta reveal">
+      <div class="eb-cta__inner">
+        <h2>See it on one of your workflows.</h2>
+        <p>Bring a real process. We'll scope a pilot and show you what an agent does with it.</p>
+        <div class="eb-cta__actions">
+          <a href="contact.html" class="eb-btn eb-btn--primary eb-btn--lg"><i class="fa fa-calendar"></i> Book a Demo</a>
+          <a href="post-no-data-custody.html" class="eb-btn eb-btn--outline-light eb-btn--lg"><i class="fa fa-book"></i> Read: Why No Custody</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="eb-footer">
+  <div class="eb-container">
+    <div class="eb-footer__grid">
+      <div>
+        <a href="index.html" class="eb-brand"><span class="eb-brand__mark">E</span>EnhanceBiz</a>
+        <p class="eb-footer__about">EnhanceBiz builds IndicusAI, the agentic AI platform that runs agents against your systems while your data stays where it is, and AnnotateMe, our AI-assisted annotation platform.</p>
+        <div class="eb-footer__social">
+          <a href="https://www.linkedin.com/in/enhancebiz-cx-770709415/" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:shiwesh@enhancebizcx.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+          <a href="company-profile/Profile-Enhance-Biz.pptx" aria-label="Brochure"><i class="fa fa-file-powerpoint-o"></i></a>
+        </div>
+      </div>
+      <div><h4>Platform</h4><div class="eb-footer__links"><a href="indicusai.html">IndicusAI</a><a href="solutions.html">Solutions</a><a href="indicusai.html#custody">No Data Custody</a><a href="indicusai.html#governance">Governance</a><a href="annotateme.html">AnnotateMe</a></div></div>
+      <div><h4>Explore</h4><div class="eb-footer__links"><a href="services.html">Data Services</a><a href="insights.html">Insights</a><a href="about.html">About Us</a><a href="careers.html">Careers</a><a href="contact.html">Contact</a></div></div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <ul class="eb-footer__contact" style="margin-bottom:16px;">
+          <li><i class="fa fa-envelope"></i><a href="mailto:shiwesh@enhancebizcx.com">shiwesh@enhancebizcx.com</a></li>
+          <li><i class="fa fa-envelope"></i><a href="mailto:kaushal@enhancebizcx.com">kaushal@enhancebizcx.com</a></li>
+          <li><i class="fa fa-phone"></i><a href="tel:+918757869540">+91 87578 69540</a></li>
+          <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/enhancebiz-cx-770709415/" target="_blank">EnhanceBiz on LinkedIn</a></li>
+        </ul>
+        <form class="eb-newsletter" onsubmit="return false;"><input type="email" placeholder="Your work email" required><button class="eb-btn eb-btn--primary" type="submit">Subscribe</button></form>
+      </div>
+    </div>
+    <div class="eb-footer__bottom">
+      <div>© 2026 EnhanceBiz. All rights reserved.</div>
+      <div><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/eb-site.js?v=3"></script>
+<script src="js/eb-chatbot.js?v=2"></script>
+</body>
+</html>
